@@ -588,14 +588,3 @@ Precision loss: 0% (for these inputs which encode exactly in Q8.8)
 ```
 
 For inputs that do not encode exactly, the error is under 0.4% for values in [0, 4]. This is acceptable — and it is the exact tradeoff Google accepted when designing the TPU around INT8 arithmetic instead of FP32. They got a chip that delivers dramatically more operations per watt per mm² of silicon, at a precision cost their models could absorb.
-
----
-
-## Files
-
-| File | What to read for |
-|---|---|
-| `dot_product.c` | Bit-level implementation. `int32_t`, `int64_t`, and `>>` map directly to hardware register widths and the hardwired shift. |
-| `dot_product.f90` | Arithmetic-forward implementation. Array syntax and `ishft` read closer to the mathematical description above. |
-
-Both files: no libraries, fixed-point from scratch, overflow detection, floating-point comparison.
