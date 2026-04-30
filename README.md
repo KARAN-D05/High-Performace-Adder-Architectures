@@ -9,6 +9,7 @@
 
 ## ⚙️ Implementation Stack  
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge) 
+![Verilog](https://img.shields.io/badge/Verilog-FFEA00?style=for-the-badge&logoColor=black)
 
 ## 📦 Modules
 
