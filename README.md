@@ -8,15 +8,7 @@
 - This repository documents that relationship systematically. Each module takes one algorithm that real hardware executes, implements it from scratch in software, and connects every design decision back to what it costs on silicon.
 
 ## ⚙️ Implementation Stack  
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge) ![Fortran](https://img.shields.io/badge/Fortran-734F96?style=for-the-badge)
-
-## 🏗️ What Each Module Contains
-
-- **README** is the primary learning document. It explains the problem from first principles, walks through the naive approach and why it is expensive, derives the optimized algorithm with worked examples, and connects every step to its hardware cost in gates, cycles, and area.
-
-- **Two implementations** of the same algorithm:
-  - `Fortran` : arithmetic reads close to mathematical notation, numerical clarity
-  - `C` : bit-level mechanics visible, register widths explicit, maps directly to RTL thinking
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge) 
 
 ## 📦 Modules
 
