@@ -595,7 +595,7 @@ For inputs that do not encode exactly, the error is under 0.4% for values in [0,
 
 | File | What to read for |
 |---|---|
-| `c/dot_product.c` | Bit-level implementation. `int32_t`, `int64_t`, and `>>` map directly to hardware register widths and the hardwired shift. |
-| `fortran/dot_product.f90` | Arithmetic-forward implementation. Array syntax and `ishft` read closer to the mathematical description above. |
+| `dot_product.c` | Bit-level implementation. `int32_t`, `int64_t`, and `>>` map directly to hardware register widths and the hardwired shift. |
+| `dot_product.f90` | Arithmetic-forward implementation. Array syntax and `ishft` read closer to the mathematical description above. |
 
 Both files: no libraries, fixed-point from scratch, overflow detection, floating-point comparison.
