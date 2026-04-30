@@ -1,5 +1,5 @@
 /*
- * Fixed-Point Dot Product — C Implementation
+ * Fixed-Point Dot Product - C Implementation
  * Q8.8 format: scale factor = 256 (2^8)
  * Compile: gcc -o dot_product dot_product.c -lm
  */
@@ -9,11 +9,11 @@
 #include <math.h>     /* fabs() */
 
 #define N         8
-#define SCALE   256   /* 2^8 — fixed-point scaling factor */
+#define SCALE   256   /* 2^8 - fixed-point scaling factor */
 
 int main(void) {
 
-    /* Input vectors — real values */
+    /* Input vectors - real values */
     float A[N] = {1.5f, 2.25f, 0.75f, 3.0f, 1.125f, 2.5f, 0.5f, 1.75f};
     float B[N] = {2.0f, 1.5f,  3.25f, 0.5f, 2.75f,  1.0f, 3.5f, 2.25f};
 
@@ -43,7 +43,7 @@ int main(void) {
     int32_t fx_raw    = (int32_t)(acc >> 8);
     float   fx_result = (float)fx_raw / (float)SCALE;
 
-    /* Overflow check — mirrors hardware status flag behaviour */
+    /* Overflow check - mirrors hardware status flag behaviour */
     if (acc > (int64_t)0x7FFFFFFF)
         printf("WARNING: overflow — widen accumulator register\n");
 
