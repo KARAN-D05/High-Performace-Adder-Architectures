@@ -1,4 +1,4 @@
-! Fixed-Point Dot Product — Fortran 90 Implementation
+! Fixed-Point Dot Product Fortran 90 Implementation
 ! Q8.8 format: scale factor = 256 (2^8)
 ! Compile: gfortran -o dot_product dot_product.f90
 
@@ -6,15 +6,15 @@ program dot_product
     implicit none   ! force explicit declaration of all variables
 
     integer, parameter :: N         = 8
-    integer, parameter :: SCALE     = 256   ! 2^8 — fixed-point scaling factor
+    integer, parameter :: SCALE     = 256   ! 2^8 fixed-point scaling factor
     integer, parameter :: FRAC_BITS = 8
 
-    real    :: A(N), B(N)           ! input vectors — real values
+    real    :: A(N), B(N)           ! input vectors - real values
     integer :: A_fx(N), B_fx(N)    ! Q8.8 encoded integers
     integer :: i
 
     real        :: fp_result        ! floating-point dot product
-    integer(8)  :: acc              ! 64-bit accumulator — sized to prevent overflow
+    integer(8)  :: acc              ! 64-bit accumulator sized to prevent overflow
     integer     :: fx_raw           ! raw Q8.8 result after shift
     real        :: fx_result        ! decoded fixed-point result
     real        :: error            ! precision loss percentage
@@ -51,9 +51,9 @@ program dot_product
     ! Results
     error = abs(fp_result - fx_result) / fp_result * 100.0
 
-    print "(A, F10.6, A, I6)", "Floating-point result : ", fp_result, "  (gate cost ~", N*2000
-    print "(A, F10.6, A, I6)", "Fixed-point result    : ", fx_result, "  (gate cost ~", N*200
-    print "(A, F8.4, A)",      "Precision loss        : ", error, " %"
-    print *,                   "Gate reduction        : ~10x"
+    print "(A, F10.6, A, I6, A)", "Floating-point result : ", fp_result, "  (gate cost ~", N*2000, ")"
+    print "(A, F10.6, A, I6, A)", "Fixed-point result    : ", fx_result, "  (gate cost ~", N*200, ")"
+    print "(A, F8.4, A)",         "Precision loss        : ", error, " %"
+    print "(A)",                  "Gate reduction        : ~10x"
 
 end program dot_product
