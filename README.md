@@ -8,8 +8,8 @@
 - This repository documents that relationship systematically. Each module takes one algorithm that real hardware executes, implements it from scratch in software, and connects every design decision back to what it costs on silicon.
 
 ## ⚙️ Implementation Stack  
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logoColor=white)  
-![Fortran](https://img.shields.io/badge/Fortran-734F96?style=for-the-badge)
+![C](https://img.shields.io/badge/C-1E1E1E?style=for-the-badge&logo=c&logoColor=white)  
+![Fortran](https://img.shields.io/badge/Fortran-6A5ACD?style=for-the-badge)
 
 ## 🏗️ What Each Module Contains
 
