@@ -3,7 +3,8 @@
 
 ## 💡 The Core Idea
 - Before a single line of RTL is written, the algorithm is already deciding the hardware cost.
-- The same computation implemented with two different algorithms can differ by 10x in gate count, critical path delay, and power consumption. This is not theory. A binary-to-BCD converter using a truth table synthesis approach costs 352 gates. The same converter using the Double Dabble algorithm costs 133 gates. Same function, different algorithm, 62% gate count reduction .
+- The same computation implemented with two different algorithms can differ by 10x in gate count, critical path delay, and power consumption.
+- A binary-to-BCD converter using a truth table synthesis approach costs 352 gates. The same converter using the Double Dabble algorithm costs 133 gates. Same function, different algorithm, 62% gate count reduction .
 - This repository documents that relationship systematically. Each module takes one algorithm that real hardware executes, implements it from scratch in software, and connects every design decision back to what it costs on silicon.
 
 ## ⚙️ Implementation Stack
@@ -38,12 +39,6 @@
 | 08 | Jacobi Iterative Solver | HPC accelerators, solver ASICs | Planned |
 
 One module added per month alongside primary RTL and architecture study.
-
-## ⚙️ Languages Used
-
-**C** for algorithms where bit-level mechanics matter: explicit integer widths (`int32_t`, `int64_t`), bitwise shifts, overflow detection. The hardware proximity is intentional.
-
-**Fortran 90** for algorithms where the arithmetic structure matters: array operations, numerical accumulation, mathematical clarity. Fortran is the language scientific computation was built on, and it shows in how cleanly numerical algorithms read.
 
 ## 📜License:
 - Source code, HDL, and Logisim circuit files are licensed under the MIT License.
