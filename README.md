@@ -1,4 +1,4 @@
-# ⚙️ algo-to-silicon
+# 🧩 algo-to-silicon
 - Software implementations of algorithms that directly map to hardware, studying how arithmetic units and compute primitives work from first principles, and why algorithm choice determines gate count, silicon area, and speed.
 
 ## 💡 The Core Idea
@@ -6,13 +6,17 @@
 - The same computation implemented with two different algorithms can differ by 10x in gate count, critical path delay, and power consumption. This is not theory. A binary-to-BCD converter using a truth table synthesis approach costs 352 gates. The same converter using the Double Dabble algorithm costs 133 gates. Same function, different algorithm, 62% gate count reduction .
 - This repository documents that relationship systematically. Each module takes one algorithm that real hardware executes, implements it from scratch in software, and connects every design decision back to what it costs on silicon.
 
+## ⚙️ Implementation Stack
+![C](https://img.shields.io/badge/C-EFAA00?style=for-the-badge&logoColor=black)
+![Fortran](https://img.shields.io/badge/Fortran-WAC873?style=for-the-badge)
+
 ## 🏗️ What Each Module Contains
 
 - **README** is the primary learning document. It explains the problem from first principles, walks through the naive approach and why it is expensive, derives the optimized algorithm with worked examples, and connects every step to its hardware cost in gates, cycles, and area.
 
 - **Two implementations** of the same algorithm:
-  - `fortran/` : arithmetic reads close to mathematical notation, numerical clarity
-  - `c/` : bit-level mechanics visible, register widths explicit, maps directly to RTL thinking
+  - `Fortran` : arithmetic reads close to mathematical notation, numerical clarity
+  - `C` : bit-level mechanics visible, register widths explicit, maps directly to RTL thinking
 
 - Both implementations use no external libraries. Every operation is written from scratch. The code is short and readable. The README is where the learning lives.
 
@@ -40,3 +44,7 @@ One module added per month alongside primary RTL and architecture study.
 **C** for algorithms where bit-level mechanics matter: explicit integer widths (`int32_t`, `int64_t`), bitwise shifts, overflow detection. The hardware proximity is intentional.
 
 **Fortran 90** for algorithms where the arithmetic structure matters: array operations, numerical accumulation, mathematical clarity. Fortran is the language scientific computation was built on, and it shows in how cleanly numerical algorithms read.
+
+## 📜License:
+- Source code, HDL, and Logisim circuit files are licensed under the MIT License.
+- Documentation, diagrams, images, and PDFs are licensed under Creative Commons Attribution 4.0 (CC BY 4.0).
