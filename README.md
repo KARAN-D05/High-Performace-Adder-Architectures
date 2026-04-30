@@ -7,9 +7,9 @@
 - A binary-to-BCD converter using a truth table synthesis approach costs 352 gates. The same converter using the Double Dabble algorithm costs 133 gates. Same function, different algorithm, 62% gate count reduction .
 - This repository documents that relationship systematically. Each module takes one algorithm that real hardware executes, implements it from scratch in software, and connects every design decision back to what it costs on silicon.
 
-## ⚙️ Implementation Stack
-![C](https://img.shields.io/badge/C-EFAA00?style=for-the-badge&logoColor=black)
-![Fortran](https://img.shields.io/badge/Fortran-WAC873?style=for-the-badge)
+## ⚙️ Implementation Stack  
+![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)  
+![Fortran](https://img.shields.io/badge/Fortran-734F96?style=for-the-badge)
 
 ## 🏗️ What Each Module Contains
 
