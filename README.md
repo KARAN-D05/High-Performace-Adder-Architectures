@@ -15,8 +15,8 @@
 
 | # | Algorithm | Where It Lives in Hardware | Status |
 |---|---|---|---|
-| 01 | Fixed-Point Dot Product | MAC units, neural network accelerators, DSP | ✅ Complete |
-| 02 | Booth's Multiplier | Hardware multipliers, ALUs | 🔜 Next |
+| 01 | Fixed-Point Dot Product | MAC units, neural network accelerators, DSP | 🔜 In Progress |
+| 02 | Booth's Multiplier | Hardware multipliers, ALUs |  Planned |
 | 03 | Carry-Lookahead Adder | Fast adder design, ALU critical path | Planned |
 | 04 | CORDIC | Transcendental FPUs, DSP processors | Planned |
 | 05 | Horner's Method | DSP filters, FPU polynomial approximation | Planned |
