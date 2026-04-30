@@ -18,8 +18,6 @@
   - `Fortran` : arithmetic reads close to mathematical notation, numerical clarity
   - `C` : bit-level mechanics visible, register widths explicit, maps directly to RTL thinking
 
-- Both implementations use no external libraries. Every operation is written from scratch. The code is short and readable. The README is where the learning lives.
-
 ## 📦 Modules
 
 | # | Algorithm | Where It Lives in Hardware | Status |
