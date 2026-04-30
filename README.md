@@ -21,10 +21,6 @@
 
 - Both implementations use no external libraries. Every operation is written from scratch. The code is short and readable. The README is where the learning lives.
 
-## 🧠 The Hardware Connection
-- A fixed-point multiplier is what lives inside every MAC unit in every TPU, tensor core, and DSP chip. Booth's algorithm is how hardware multipliers reduce partial products to cut gate count. The carry-lookahead adder is why modern processors can add in 1 cycle instead of 32. CORDIC is how hardware computes sin and cos using only shifts and adds, with zero multipliers.
-- Understanding these algorithms in software first means that when the RTL comes, we are not learning the concept and the syntax simultaneously. The algorithm is already understood. The HDL is just expression.
-
 ## 📦 Modules
 
 | # | Algorithm | Where It Lives in Hardware | Status |
