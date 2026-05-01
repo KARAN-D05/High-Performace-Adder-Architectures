@@ -45,7 +45,7 @@ int main(void) {
 
     /* Overflow check - mirrors hardware status flag behaviour */
     if (acc > (int64_t)0x7FFFFFFF)
-        printf("WARNING: overflow — widen accumulator register\n");
+        printf("WARNING: overflow - widen accumulator register\n");
 
     /* Results */
     float error = (fabs(fp_result - fx_result) / fp_result) * 100.0f;
