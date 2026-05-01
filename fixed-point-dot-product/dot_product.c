@@ -5,7 +5,7 @@
  */
 
 #include <stdio.h>
-#include <stdint.h>   /* int32_t, int64_t — explicit bit-width types */
+#include <stdint.h>   /* int32_t, int64_t - explicit bit-width types */
 #include <math.h>     /* fabs() */
 
 #define N         8
