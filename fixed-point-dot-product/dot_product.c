@@ -39,7 +39,7 @@ int main(void) {
         acc += (int64_t)A_fx[i] * (int64_t)B_fx[i];   /* ~200 gates per multiply */
     }
 
-    /* Right-shift by 8: Q16.16 → Q8.8. Free in hardware — just rewiring. */
+    /* Right-shift by 8: Q16.16 → Q8.8. Free in hardware, just rewiring. */
     int32_t fx_raw    = (int32_t)(acc >> 8);
     float   fx_result = (float)fx_raw / (float)SCALE;
 
