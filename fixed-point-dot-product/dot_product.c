@@ -1,7 +1,7 @@
 /*
  * Fixed-Point Dot Product - C Implementation
  * Q8.8 format: scale factor = 256 (2^8)
- * Compile: gcc -o dot_product dot_product.c -lm
+ * Compile: gcc -o dot_product dot_product.c
  */
 
 #include <stdio.h>
