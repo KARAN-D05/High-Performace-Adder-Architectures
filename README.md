@@ -1,14 +1,13 @@
 # 🧩 algo-to-silicon
-- Software implementations of algorithms that directly map to hardware, studying how arithmetic units and compute primitives work from first principles, and why algorithm choice determines gate count, silicon area, and speed.
+- Implementations of algorithms that directly map to hardware, studying how arithmetic units and compute primitives work from first principles, and why algorithm choice determines gate count, silicon area, and speed.
 
 ## 💡 The Core Idea
 - Before a single line of RTL is written, the algorithm is already deciding the hardware cost.
 - The same computation implemented with two different algorithms can differ by 10x in gate count, critical path delay, and power consumption.
 - A binary-to-BCD converter using a truth table synthesis approach costs 352 gates. The same converter using the Double Dabble algorithm costs 133 gates. Same function, different algorithm, 62% gate count reduction .
-- This repository documents that relationship systematically. Each module takes one algorithm that real hardware executes, implements it from scratch in software, and connects every design decision back to what it costs on silicon.
+- This repository documents that relationship systematically. Each module takes one algorithm that real hardware executes, implements it from scratch in verilog, and connects every design decision back to what it costs on silicon.
 
 ## ⚙️ Implementation Stack  
-![C](https://img.shields.io/badge/C-00599C?style=for-the-badge) 
 ![Verilog](https://img.shields.io/badge/Verilog-FFEA00?style=for-the-badge&logoColor=black)
 
 ## 📦 Modules
@@ -23,8 +22,6 @@
 | 06 | LZC + Normalization | Floating-point normalization hardware | Planned |
 | 07 | BFloat16 MAC | ML accelerators, TPU, NVIDIA Tensor Cores | Planned |
 | 08 | Jacobi Iterative Solver | HPC accelerators, solver ASICs | Planned |
-
-One module added per month alongside primary RTL and architecture study.
 
 ## 📜License:
 - Source code, HDL, and Logisim circuit files are licensed under the MIT License.
