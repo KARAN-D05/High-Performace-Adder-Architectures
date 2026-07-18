@@ -96,39 +96,13 @@ Different silicon.
 
 This repository studies those algorithmic trade-offs through parameterized RTL implementations, verification, synthesis, and architectural analysis.
 
-# Learning Goals
-
-This repository is built around a single question:
-
-> **How do mathematical ideas become efficient digital hardware?**
-
-Each project follows the same progression.
-
-```
-Mathematics
-      ↓
-Algorithm
-      ↓
-Architecture
-      ↓
-RTL Design
-      ↓
-Verification
-      ↓
-Logic Synthesis
-      ↓
-Timing & Area Analysis
-```
-
-Rather than treating algorithms as software, every module investigates how the computation is physically realized inside silicon.
-
 # 📊 Repository Roadmap
 
 ## Phase 0 - Motivation
 
 Understanding why accelerators exist.
 
-- [Multi-Cycle Harvard Processor(Reference Architecture)](https://github.com/KARAN-D05/Harvard-Processor)
+- [Multi-Cycle Harvard Processor (Reference Architecture)](https://github.com/KARAN-D05/Harvard-Processor)
 - Sequential instruction execution
 - Architectural bottlenecks
 - Why specialized datapaths outperform software loops
