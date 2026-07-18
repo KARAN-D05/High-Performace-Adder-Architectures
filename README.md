@@ -69,33 +69,6 @@ This philosophy is used throughout modern computing:
 - Scientific computing hardware
 - Cryptographic accelerators
 
-# 📚 Core Philosophy
-
-Before a single line of RTL is written, the algorithm has already begun determining the hardware.
-
-Different algorithms solving exactly the same mathematical problem can produce dramatically different hardware in terms of
-
-- gate count
-- silicon area
-- critical path delay
-- power consumption
-- scalability
-- parallelism
-
-A simple example:
-
-A Binary-to-BCD converter synthesized directly from a truth table requires approximately **352 logic gates**.
-
-The same conversion implemented using the **Double Dabble algorithm** requires only **133 logic gates**, a **62% reduction**, despite producing identical outputs.
-
-Same function.
-
-Different algorithm.
-
-Different silicon.
-
-This repository studies those algorithmic trade-offs through parameterized RTL implementations, verification, synthesis, and architectural analysis.
-
 # 📊 Repository Roadmap
 
 ## Phase 0 - Motivation
