@@ -69,7 +69,7 @@ This philosophy is used throughout modern computing:
 - Scientific computing hardware
 - Cryptographic accelerators
 
-# 📊 Repository Roadmap
+# 📊 Roadmap
 
 ## Phase 0 - Motivation
 
