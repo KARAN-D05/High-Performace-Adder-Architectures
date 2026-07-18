@@ -1,13 +1,9 @@
-# 🧩 algo-to-silicon
-- Implementations of algorithms that directly map to hardware, studying how arithmetic units and compute primitives work from first principles, and why algorithm choice determines gate count, silicon area, and speed.
+# 🚀 Math-Accelerators
 
-## 💡 The Core Idea
-- Before a single line of RTL is written, the algorithm is already deciding the hardware cost.
-- The same computation implemented with two different algorithms can differ by 10x in gate count, critical path delay, and power consumption.
-- A binary-to-BCD converter using a truth table synthesis approach costs 352 gates. The same converter using the Double Dabble algorithm costs 133 gates. Same function, different algorithm, 62% gate count reduction .
-- This repository documents that relationship systematically. Each module takes one algorithm that real hardware executes, implements it from scratch in verilog, and connects every design decision back to what it costs on silicon.
+> Exploring how mathematical algorithms become specialized digital hardware.
 
-## 🛠️ Tools & Technologies
+# 🛠️ Tools & Technologies
+
 ![Icarus Verilog](https://img.shields.io/badge/Icarus_Verilog-Simulation-1E88E5?style=flat-square)
 ![Verilator](https://img.shields.io/badge/Verilator-Linting-00897B?style=flat-square)
 ![Cocotb](https://img.shields.io/badge/Cocotb-Verification-D81B60?style=flat-square)
@@ -15,19 +11,187 @@
 ![Yosys](https://img.shields.io/badge/Yosys-Synthesis-43A047?style=flat-square)
 ![OpenSTA](https://img.shields.io/badge/OpenSTA-Static_Timing_Analysis-8E24AA?style=flat-square)
 
-## 📦 Modules
+A general-purpose processor can execute almost any algorithm, but it does so by repeatedly fetching, decoding, and executing instructions. For computationally intensive workloads such as signal processing, scientific computing, computer graphics, and machine learning, this approach quickly becomes inefficient.
 
-| # | Algorithm | Where It Lives in Hardware | Status |
-|---|---|---|---|
-| 01 | Fixed-Point Dot Product | MAC units, neural network accelerators, DSP | 🔜 In Progress |
-| 02 | Booth's Multiplier | Hardware multipliers, ALUs |  Planned |
-| 03 | Carry-Lookahead Adder | Fast adder design, ALU critical path | Planned |
-| 04 | CORDIC | Transcendental FPUs, DSP processors | Planned |
-| 05 | Horner's Method | DSP filters, FPU polynomial approximation | Planned |
-| 06 | LZC + Normalization | Floating-point normalization hardware | Planned |
-| 07 | BFloat16 MAC | ML accelerators, TPU, NVIDIA Tensor Cores | Planned |
-| 08 | Jacobi Iterative Solver | HPC accelerators, solver ASICs | Planned |
+Modern systems solve this problem using **hardware accelerators**-specialized datapaths designed to execute specific mathematical operations far more efficiently than software running on a CPU.
 
-## 📜License:
-- Source code, HDL, and Logisim circuit files are licensed under the MIT License.
+This repository explores that transformation.
+
+Beginning with the limitations of a simple multi-cycle processor, each project studies how mathematical algorithms are mapped into reusable RTL hardware, why different algorithms produce different silicon costs, and how dedicated arithmetic units eventually combine into a configurable mathematical co-processor.
+
+# 🧩 Hardware Accelerators
+
+A simple processor computing a single element of a dot product
+executes something conceptually like:
+
+```asm
+LOOP:
+    LDB 0x06          ; Load constant 1
+    LDA 0x08          ; Load multiplier (loop counter)
+
+    PASS A            ; Check if counter is zero
+    JZ DONE           ; Jump if counter is zero
+
+    SUB               ; Decrement counter
+    STA 0x08          ; Store updated counter
+
+    LDA 0x09          ; Load accumulated result
+    LDB 0x07          ; Load multiplicand
+    ADD               ; Add multiplicand to result
+    STA 0x09          ; Store updated result
+
+    LDA 0x08          ; Reload counter
+    PASS A            ; Update status flags
+    JNZ LOOP          ; Repeat until counter becomes zero
+
+DONE:
+    LDA 0x09          ; Load final product
+```
+
+repeating these instructions for every element.
+
+Although completely programmable, the processor performs every operation sequentially.
+
+A hardware accelerator instead implements the computation directly in hardware.
+
+```
+Vector A
+      \
+        > Dot Product Engine --> Result
+      /
+Vector B
+```
+
+Rather than executing instructions one at a time, the hardware itself performs the mathematical operation through dedicated datapaths, parallel arithmetic units, and optimized data movement.
+
+This philosophy is used throughout modern computing:
+
+- DSP processors
+- Graphics Processing Units (GPUs)
+- AI accelerators
+- Tensor Processing Units (TPUs)
+- Scientific computing hardware
+- Cryptographic accelerators
+
+# 📚 Core Philosophy
+
+Before a single line of RTL is written, the algorithm has already begun determining the hardware.
+
+Different algorithms solving exactly the same mathematical problem can produce dramatically different hardware in terms of
+
+- gate count
+- silicon area
+- critical path delay
+- power consumption
+- scalability
+- parallelism
+
+A simple example:
+
+A Binary-to-BCD converter synthesized directly from a truth table requires approximately **352 logic gates**.
+
+The same conversion implemented using the **Double Dabble algorithm** requires only **133 logic gates**, a **62% reduction**, despite producing identical outputs.
+
+Same function.
+
+Different algorithm.
+
+Different silicon.
+
+This repository studies those algorithmic trade-offs through parameterized RTL implementations, verification, synthesis, and architectural analysis.
+
+# Learning Goals
+
+This repository is built around a single question:
+
+> **How do mathematical ideas become efficient digital hardware?**
+
+Each project follows the same progression.
+
+```
+Mathematics
+      ↓
+Algorithm
+      ↓
+Architecture
+      ↓
+RTL Design
+      ↓
+Verification
+      ↓
+Logic Synthesis
+      ↓
+Timing & Area Analysis
+```
+
+Rather than treating algorithms as software, every module investigates how the computation is physically realized inside silicon.
+
+# 📊 Repository Roadmap
+
+## Phase 0 - Motivation
+
+Understanding why accelerators exist.
+
+- [Multi-Cycle Harvard Processor(Reference Architecture)](https://github.com/KARAN-D05/Harvard-Processor)
+- Sequential instruction execution
+- Architectural bottlenecks
+- Why specialized datapaths outperform software loops
+
+## Phase 1 - Arithmetic Foundations
+
+Fundamental arithmetic building blocks used throughout digital systems.
+
+| # | Module | Why It Matters | Status |
+|---|---------|----------------|--------|
+| 01 | Ripple Carry Adder | Baseline area and delay | Planned |
+| 02 | Carry Lookahead Adder | Faster carry computation | Planned |
+| 03 | Brent–Kung Prefix Adder | Scalable logarithmic carry propagation | Planned |
+| 04 | Leading Zero Counter (LZC) | Floating-point normalization | Planned |
+| 05 | Barrel Shifter | Alignment and fast shifting | Planned |
+
+## Phase 2 - Arithmetic Units
+
+Constructing reusable computational hardware.
+
+| # | Module | Used In | Status |
+|---|---------|---------|--------|
+| 06 | Booth Multiplier | Signed multiplication | Planned |
+| 07 | Wallace Tree Reduction | High-speed multipliers | Planned |
+| 08 | Fixed-Point Multiply-Accumulate (MAC) | DSP and AI | Planned |
+
+## Phase 3 - Computational Kernels
+
+Mapping mathematical algorithms directly into hardware.
+
+| # | Module | Used In | Status |
+|---|---------|---------|--------|
+| 09 | Fixed-Point Dot Product | DSP, Neural Networks | Planned |
+| 10 | Horner's Method | Polynomial Evaluation | Planned |
+| 11 | CORDIC Engine | Trigonometry, Vector Rotation | Planned |
+| 12 | Jacobi Iterative Solver | Scientific Computing | Planned |
+
+## Phase 4 - Floating-Point Arithmetic
+
+Building floating-point computation hardware.
+
+| # | Module | Used In | Status |
+|---|---------|---------|--------|
+| 13 | Floating-Point Normalization | IEEE Arithmetic | Planned |
+| 14 | BFloat16 Multiplier | Machine Learning | Planned |
+| 15 | BFloat16 MAC | AI Accelerators | Planned |
+
+## Phase 5 - Integrated Math Accelerator
+
+The final objective is to combine the reusable modules into a configurable mathematical co-processor containing:
+
+- Parameterized arithmetic units
+- Shared datapath
+- Register file
+- Operation decoder
+- Control logic
+- Standard hardware interface
+- Reusable accelerator IP
+
+## 📜License
+- Source code and HDL files are licensed under the MIT License.
 - Documentation, diagrams, images, and PDFs are licensed under Creative Commons Attribution 4.0 (CC BY 4.0).
