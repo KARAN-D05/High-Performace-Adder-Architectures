@@ -51,7 +51,7 @@ A hardware accelerator instead implements the computation directly in hardware.
 ```asm
 Vector A
       \
-         > Dot Product Engine --> Result
+        --> Dot Product Engine --> Result
       /
 Vector B
 ```
