@@ -188,6 +188,6 @@ The final objective is to combine the reusable modules into a configurable mathe
 - Standard hardware interface
 - Reusable accelerator IP
 
-## 📜License
+# 📜License
 - Source code and HDL files are licensed under the MIT License.
 - Documentation, diagrams, images, and PDFs are licensed under Creative Commons Attribution 4.0 (CC BY 4.0).
