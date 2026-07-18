@@ -88,7 +88,7 @@ Fundamental arithmetic building blocks used throughout digital systems.
 |---|---------|----------------|--------|
 | 01 | Ripple Carry Adder | Baseline area and delay | Planned |
 | 02 | Carry Lookahead Adder | Faster carry computation | Planned |
-| 03 | Brent–Kung Prefix Adder | Scalable logarithmic carry propagation | Planned |
+| 03 | Brent-Kung Prefix Adder | Scalable logarithmic carry propagation | Planned |
 | 04 | Leading Zero Counter (LZC) | Floating-point normalization | Planned |
 | 05 | Barrel Shifter | Alignment and fast shifting | Planned |
 
