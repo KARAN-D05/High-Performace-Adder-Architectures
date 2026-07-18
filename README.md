@@ -2,6 +2,14 @@
 
 > Exploring how mathematical algorithms become specialized digital hardware.
 
+A general-purpose processor can execute almost any algorithm, but it does so by repeatedly fetching, decoding, and executing instructions. For computationally intensive workloads such as signal processing, scientific computing, computer graphics, and machine learning, this approach quickly becomes inefficient.
+
+Modern systems solve this problem using **hardware accelerators**-specialized datapaths designed to execute specific mathematical operations far more efficiently than software running on a CPU.
+
+This repository explores that transformation.
+
+Beginning with the limitations of a simple multi-cycle processor, each project studies how mathematical algorithms are mapped into reusable RTL hardware, why different algorithms produce different silicon costs, and how dedicated arithmetic units eventually combine into a configurable mathematical co-processor.
+
 # 🛠️ Tools & Technologies
 
 ![Icarus Verilog](https://img.shields.io/badge/Icarus_Verilog-Simulation-1E88E5?style=flat-square)
@@ -10,14 +18,6 @@
 ![GTKWave](https://img.shields.io/badge/GTKWave-Waveforms-F57C00?style=flat-square)
 ![Yosys](https://img.shields.io/badge/Yosys-Synthesis-43A047?style=flat-square)
 ![OpenSTA](https://img.shields.io/badge/OpenSTA-Static_Timing_Analysis-8E24AA?style=flat-square)
-
-A general-purpose processor can execute almost any algorithm, but it does so by repeatedly fetching, decoding, and executing instructions. For computationally intensive workloads such as signal processing, scientific computing, computer graphics, and machine learning, this approach quickly becomes inefficient.
-
-Modern systems solve this problem using **hardware accelerators**-specialized datapaths designed to execute specific mathematical operations far more efficiently than software running on a CPU.
-
-This repository explores that transformation.
-
-Beginning with the limitations of a simple multi-cycle processor, each project studies how mathematical algorithms are mapped into reusable RTL hardware, why different algorithms produce different silicon costs, and how dedicated arithmetic units eventually combine into a configurable mathematical co-processor.
 
 # 🧩 Hardware Accelerators
 
