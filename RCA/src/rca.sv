@@ -1,4 +1,4 @@
-# 64-Bit RCA
+// 64-Bit Ripple-Carry Adder
 
 `default_nettype none
 
