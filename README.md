@@ -4,7 +4,7 @@
 
 A general-purpose processor can execute almost any algorithm, but it does so by repeatedly fetching, decoding, and executing instructions. For computationally intensive workloads such as signal processing, scientific computing, computer graphics, and machine learning, this approach quickly becomes inefficient.
 
-Modern systems solve this problem using **hardware accelerators**-specialized datapaths designed to execute specific mathematical operations far more efficiently than software running on a CPU.
+Modern systems solve this problem using **hardware accelerators** - specialized datapaths designed to execute specific mathematical operations far more efficiently than software running on a CPU.
 
 # 🛠️ Tools & Technologies
 
