@@ -12,7 +12,7 @@ Parameterized 64-bit Ripple-Carry Adder built from cascaded full-adder stages.
 - Sky130 HD synthesis and OpenSTA STA
 
 <p align="center">
-  <img src="images/waveform.png" width="1000"/>
+  <img src="images/rca_waveform.png" width="1000"/>
   <br>
   <sub>64-Bit Addition</sub>
 </p>
