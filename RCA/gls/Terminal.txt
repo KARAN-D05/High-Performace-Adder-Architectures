@@ -1,16 +1,6 @@
-VCD info: dumpfile Sim.vcd opened for output.
 time = 0 | a = 0000000000000000 | b = 0000000000000000 | c_in = 1 | sum = 0000000000000001 | c_out = 0 
 time = 5000 | a = f0f0f0f0f0f0f0f0 | b = 0f0f0f0f0f0f0f0f | c_in = 0 | sum = ffffffffffffffff | c_out = 0 
 time = 10000 | a = ffffffffffffffff | b = 0000000000000001 | c_in = 0 | sum = 0000000000000000 | c_out = 1 
 time = 15000 | a = 00000000000000b8 | b = 0000000000000017 | c_in = 1 | sum = 00000000000000d0 | c_out = 0 
 time = 20000 | a = ffffffffffffffff | b = ffffffffffffffff | c_in = 1 | sum = ffffffffffffffff | c_out = 1 
 Simulation Complete!
-rca_tb.sv:52: $finish called at 25000 (1ps)
-VCD info: dumpfile Sim.vcd opened for output.
-time = 0 | a = 0000000000000000 | b = 0000000000000000 | c_in = 1 | sum = 0000000000000001 | c_out = 0 
-time = 5000 | a = f0f0f0f0f0f0f0f0 | b = 0f0f0f0f0f0f0f0f | c_in = 0 | sum = ffffffffffffffff | c_out = 0 
-time = 10000 | a = ffffffffffffffff | b = 0000000000000001 | c_in = 0 | sum = 0000000000000000 | c_out = 1 
-time = 15000 | a = 00000000000000b8 | b = 0000000000000017 | c_in = 1 | sum = 00000000000000d0 | c_out = 0 
-time = 20000 | a = ffffffffffffffff | b = ffffffffffffffff | c_in = 1 | sum = ffffffffffffffff | c_out = 1 
-Simulation Complete!
-rca_tb.sv:52: $finish called at 25000 (1ps)
