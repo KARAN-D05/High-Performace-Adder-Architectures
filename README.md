@@ -43,9 +43,7 @@ DONE:
 ```
 
 repeating these instructions for every element.
-
 Although completely programmable, the processor performs every operation sequentially.
-
 A hardware accelerator instead implements the computation directly in hardware.
 
 ```asm
