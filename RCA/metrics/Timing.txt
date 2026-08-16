@@ -4,7 +4,7 @@ Path Group: unconstrained
 Path Type: max
 
   Delay    Time   Description
----------------------------------------------------------
+--------------------------------------------------------
    0.00    0.00 v input external delay
    0.00    0.00 v c_in (in)
    0.37    0.37 v _514_/X (sky130_fd_sc_hd__maj3_1)
@@ -75,5 +75,3 @@ Path Type: max
           25.00   data arrival time
 ---------------------------------------------------------
 (Path is unconstrained)
-
-
