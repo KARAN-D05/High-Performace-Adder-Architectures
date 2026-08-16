@@ -1,5 +1,3 @@
-18. Printing statistics.
-
 === rca ===
 
    Number of wires:                839
