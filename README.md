@@ -58,14 +58,12 @@ Vector B
 
 Rather than executing instructions one at a time, the hardware itself performs the mathematical operation through dedicated datapaths, parallel arithmetic units, and optimized data movement.
 
-This philosophy is used throughout modern computing:
+# 🔬 Physical Characterization
+The following table summarizes post-synthesis implementation results obtained using the Sky130 HD standard-cell library.
 
-- DSP processors
-- Graphics Processing Units (GPUs)
-- AI accelerators
-- Tensor Processing Units (TPUs)
-- Scientific computing hardware
-- Cryptographic accelerators
+| Module | Width | Area | Critical Path | Estimated Fmax | Total Power |
+|---|---|---|---|---|---|
+| [Ripple-Carry Adder](./RCA) | 64-bit | 1761.6896 µm² | 25.00 ns | ~40 MHz | 925 µW |
 
 # 📊 Roadmap
 
