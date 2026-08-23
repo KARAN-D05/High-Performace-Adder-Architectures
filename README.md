@@ -15,7 +15,7 @@ Modern systems solve this problem using **hardware accelerators** - specialized 
 ![Yosys](https://img.shields.io/badge/Yosys-Synthesis-43A047?style=flat-square)
 ![OpenSTA](https://img.shields.io/badge/OpenSTA-Static_Timing_Analysis-8E24AA?style=flat-square)
 
-# 🧩 Hardware Accelerators
+# 🧩 Accelerators
 
 A simple processor computing a single element of a dot product
 executes something conceptually like:
@@ -46,7 +46,7 @@ DONE:
 
 repeating these instructions for every element.
 Although completely programmable, the processor performs every operation sequentially.
-A hardware accelerator instead implements the computation directly in hardware.
+An accelerator instead implements the computation directly in hardware.
 
 ```asm
 Vector A
