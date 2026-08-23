@@ -1,0 +1,51 @@
+Startpoint: c_in (input port)
+Endpoint: c_out (output port)
+Path Group: unconstrained
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00 v input external delay
+   0.00    0.00 v c_in (in)
+   0.37    0.37 v _606_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    0.76 v _608_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    1.15 v _610_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    1.55 v _612_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    1.94 v _614_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    2.33 v _616_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    2.72 v _618_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    3.11 v _620_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    3.50 v _622_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    3.90 v _624_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    4.29 v _626_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    4.68 v _628_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    5.07 v _630_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    5.46 v _632_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    5.86 v _634_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    6.25 v _636_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    6.64 v _638_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    7.03 v _640_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    7.42 v _642_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    7.82 v _644_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    8.21 v _646_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    8.60 v _648_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    8.99 v _650_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    9.38 v _652_/X (sky130_fd_sc_hd__maj3_1)
+   0.39    9.78 v _654_/X (sky130_fd_sc_hd__maj3_1)
+   0.39   10.17 v _656_/X (sky130_fd_sc_hd__maj3_1)
+   0.39   10.56 v _658_/X (sky130_fd_sc_hd__maj3_1)
+   0.39   10.95 v _660_/X (sky130_fd_sc_hd__maj3_1)
+   0.39   11.34 v _662_/X (sky130_fd_sc_hd__maj3_1)
+   0.39   11.74 v _664_/X (sky130_fd_sc_hd__maj3_1)
+   0.39   12.13 v _666_/X (sky130_fd_sc_hd__maj3_1)
+   0.85   12.98 v _668_/X (sky130_fd_sc_hd__maj3_1)
+   0.41   13.39 ^ _782_/X (sky130_fd_sc_hd__mux2_1)
+   0.12   13.51 v _784_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.40   13.91 v _787_/X (sky130_fd_sc_hd__maj3_1)
+   0.33   14.24 v _790_/X (sky130_fd_sc_hd__maj3_1)
+   0.00   14.24 v c_out (out)
+          14.24   data arrival time
+---------------------------------------------------------
+(Path is unconstrained)
+
+
