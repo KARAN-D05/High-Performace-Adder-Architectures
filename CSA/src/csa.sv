@@ -1,3 +1,4 @@
+// 64-Bit CSA (32+32)
 `default_nettype none
 
 module csa #(
