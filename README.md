@@ -90,8 +90,6 @@ Fundamental arithmetic building blocks used throughout digital systems.
 | 05 | Leading Zero Counter (LZC) | Floating-point normalization | Planned |
 | 06 | Barrel Shifter | Alignment and fast shifting | Planned |
 
-> Additional architectures: Implemented as encountered during study of arithmetic algorithms and architecture literature.
-
 ## Phase 2 - Arithmetic Units
 
 Constructing reusable computational hardware.
@@ -134,6 +132,8 @@ The final objective is to combine the reusable modules into a configurable mathe
 - Control logic
 - Standard hardware interface
 - Reusable accelerator IP
+
+> Additional architectures: Implemented as encountered during study of arithmetic algorithms and architecture literature.
 
 # 📜License
 - Source code and HDL files are licensed under the MIT License.
