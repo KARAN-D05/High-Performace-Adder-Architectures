@@ -42,12 +42,3 @@ A parameterized 64-bit Carry-Select Adder using a 32+32-bit architecture. The up
 | Metric | Value |
 |---|--- |
 | Total Power | 1.25 mW |
-
-## Comparison with 64-bit RCA
-
-| Metric | RCA | Carry-Select Adder |
-|---|---|---|
-| Area | 1761.6896 µm² | 2317.2224 µm² |
-| Critical Path | 25.00 ns | 14.24 ns |
-| Estimated Fmax | ~40 MHz | ~70.2 MHz |
-| Total Power | 925 µW | 1.25 mW |
