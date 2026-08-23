@@ -88,6 +88,8 @@ Fundamental arithmetic building blocks used throughout digital systems.
 | 04 | Leading Zero Counter (LZC) | Floating-point normalization | Planned |
 | 05 | Barrel Shifter | Alignment and fast shifting | Planned |
 
+> Additional architectures: Implemented as encountered during study of arithmetic algorithms and architecture literature.
+
 ## Phase 2 - Arithmetic Units
 
 Constructing reusable computational hardware.
