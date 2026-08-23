@@ -83,7 +83,7 @@ Fundamental arithmetic building blocks used throughout digital systems.
 | # | Module | Why It Matters | Status |
 |---|---------|----------------|--------|
 | 01 | Ripple Carry Adder | Baseline area and delay | ✅ |
-| 02 | Carry-Select Adder | Reduced carry propagation through parallel carry computation | Planned |
+| 02 | Carry-Select Adder | Parallel carry computation | Planned |
 | 03 | Carry Lookahead Adder | Faster carry computation | Planned |
 | 04 | Brent-Kung Prefix Adder | Scalable logarithmic carry propagation | Planned |
 | 05 | Leading Zero Counter (LZC) | Floating-point normalization | Planned |
