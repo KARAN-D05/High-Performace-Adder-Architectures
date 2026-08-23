@@ -64,6 +64,7 @@ The following table summarizes post-synthesis implementation results obtained us
 | Module | Width | Area | Critical Path | Estimated Fmax | Total Power |
 |---|---|---|---|---|---|
 | [Ripple-Carry Adder](./RCA) | 64-bit | 1761.6896 µm² | 25.00 ns | ~40 MHz | 925 µW |
+| [Carry-Select Adder](./CSA) | 64-bit | 2317.2224 µm² | 14.24 ns | ~70.2 MHz | 1.25 mW |
 
 # 📊 Roadmap
 
