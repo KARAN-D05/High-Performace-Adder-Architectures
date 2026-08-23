@@ -13,9 +13,9 @@ A parameterized 64-bit Carry-Select Adder using a 32+32-bit architecture. The up
 - Verified through RTL simulation and gate-level simulation
 
 <p align="center">
-  <img src="images/csa_waveform.png" width="1000"/>
+  <img src="images/csa_synthesis.png" width="1000"/>
   <br>
-  <sub>64-Bit Addition</sub>
+  <sub>64-Bit CSA</sub>
 </p>
 
 ## Synthesis Results
