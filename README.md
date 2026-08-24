@@ -46,7 +46,7 @@ repeating these instructions for every element.
 Although completely programmable, the processor performs every operation sequentially.
 An accelerator instead implements the computation directly in hardware.
 
-```c
+```matlab
 Vector A
       \
         --> Dot Product Engine --> Result
