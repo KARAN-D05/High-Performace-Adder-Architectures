@@ -18,7 +18,7 @@ Modern systems solve this problem using **hardware accelerators** - specialized 
 A simple processor computing a single element of a dot product
 executes something conceptually like:
 
-```c
+```matlab
 LOOP:
     LDB 0x06          ; Load constant 1
     LDA 0x08          ; Load multiplier (loop counter)
