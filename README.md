@@ -18,7 +18,7 @@ Modern systems solve this problem using **hardware accelerators** - specialized 
 A simple processor computing a single element of a dot product
 executes something conceptually like:
 
-```asm
+```c
 LOOP:
     LDB 0x06          ; Load constant 1
     LDA 0x08          ; Load multiplier (loop counter)
@@ -46,7 +46,7 @@ repeating these instructions for every element.
 Although completely programmable, the processor performs every operation sequentially.
 An accelerator instead implements the computation directly in hardware.
 
-```matlab
+```
 Vector A
       \
         --> Dot Product Engine --> Result
