@@ -36,9 +36,6 @@ A parameterized 64-bit Carry-Select Adder using a 32+32-bit architecture. The up
 | Estimated Fmax | ~70.2 MHz |
 
 ## Power Analysis
-
-**Operating Frequency:** 100 MHz
-
 | Metric | Value |
 |---|--- |
 | Total Power | 1.25 mW |
