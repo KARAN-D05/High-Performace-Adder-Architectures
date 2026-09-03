@@ -4,7 +4,7 @@ A general-purpose processor can execute almost any algorithm, but it does so by 
 
 Modern systems solve this problem using **hardware accelerators** - specialized datapaths designed to execute specific mathematical operations far more efficiently than software running on a CPU.
 
-# 🛠️ Tools & Technologies
+## 🛠️ Tools & Technologies
 
 ![Icarus Verilog](https://img.shields.io/badge/Icarus_Verilog-Simulation-1E88E5?style=flat-square)
 ![Verilator](https://img.shields.io/badge/Verilator-Linting-00897B?style=flat-square)
@@ -13,7 +13,7 @@ Modern systems solve this problem using **hardware accelerators** - specialized 
 ![Yosys](https://img.shields.io/badge/Yosys-Synthesis-43A047?style=flat-square)
 ![OpenSTA](https://img.shields.io/badge/OpenSTA-Static_Timing_Analysis-8E24AA?style=flat-square)
 
-# 🧩 Accelerators
+## 🧩 Accelerators
 
 A simple processor computing a single element of a dot product
 executes something conceptually like:
@@ -56,7 +56,7 @@ Vector B
 
 Rather than executing instructions one at a time, the hardware itself performs the mathematical operation through dedicated datapaths, parallel arithmetic units, and optimized data movement.
 
-# 🔬 Physical Characterization
+## 🔬 Physical Characterization
 The following table summarizes post-synthesis implementation results obtained using the Sky130 HD standard-cell library.
 
 | Module | Width | Area | Critical Path | Estimated Fmax | Total Power |
@@ -64,9 +64,7 @@ The following table summarizes post-synthesis implementation results obtained us
 | [Ripple-Carry Adder](./RCA) | 64-bit | 1761.6896 µm² | 25.00 ns | ~40 MHz | 925 µW |
 | [Carry-Select Adder](./CSA) | 64-bit | 2317.2224 µm² | 14.24 ns | ~70.2 MHz | 1.25 mW |
 
-# 📊 Roadmap
-
-### Understanding why accelerators exist
+## 📊 Roadmap
 
 - [Multi-Cycle Harvard Processor (Reference Architecture)](https://github.com/KARAN-D05/Harvard-Processor)
 - Sequential instruction execution
@@ -75,7 +73,7 @@ The following table summarizes post-synthesis implementation results obtained us
 
 > Architectures: Implemented as encountered during study of arithmetic algorithms and architecture literature.
 
-### Mathematical Co-Processor
+`Mathematical Co-Processor`
 
 The long-term objective is a configurable mathematical co-processor built from
 the arithmetic and computational architectures developed throughout the project.
