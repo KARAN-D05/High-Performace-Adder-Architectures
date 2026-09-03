@@ -58,7 +58,6 @@ Rather than executing instructions one at a time, the hardware itself performs t
 
 ## 🔬 Physical Characterization
 The following table summarizes post-synthesis implementation results obtained using the Sky130 HD standard-cell library.
-> Technology: Sky130HD
 
 | Module | Width | Area | Critical Path | Estimated Fmax | Total Power |
 |---|---|---|---|---|---|
