@@ -66,14 +66,14 @@ The following table summarizes post-synthesis implementation results obtained us
 
 ## 📊 Roadmap
 
-> Architectures: Implemented as encountered during study of arithmetic algorithms and architecture literature.
+> Architectures: Implemented as encountered during the study of arithmetic algorithms and architecture literature.
 
 - [Multi-Cycle Harvard Processor (Reference Architecture)](https://github.com/KARAN-D05/Harvard-Processor)
 - Sequential instruction execution
 - Architectural bottlenecks
-- Why specialized datapaths outperform software loops
+- Why specialized datapaths can outperform software loops
 
-`Mathematical Co-Processor`
+### 🧮 Mathematical Co-Processor
 
 The long-term objective is a configurable mathematical co-processor built from
 the arithmetic and computational architectures developed throughout the project.
