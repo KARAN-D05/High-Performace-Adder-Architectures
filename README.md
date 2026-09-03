@@ -94,9 +94,9 @@ Constructing reusable computational hardware.
 
 | # | Module | Used In | Status |
 |---|---------|---------|--------|
-| 06 | Booth Multiplier | Signed multiplication | Planned |
-| 07 | Wallace Tree Reduction | High-speed multipliers | Planned |
-| 08 | Fixed-Point Multiply-Accumulate (MAC) | DSP and AI | Planned |
+| 07 | Booth Multiplier | Signed multiplication | Planned |
+| 08 | Wallace Tree Reduction | High-speed multipliers | Planned |
+| 09 | Fixed-Point Multiply-Accumulate (MAC) | DSP and AI | Planned |
 
 ## Phase 3 - Computational Kernels
 
@@ -104,10 +104,10 @@ Mapping mathematical algorithms directly into hardware.
 
 | # | Module | Used In | Status |
 |---|---------|---------|--------|
-| 09 | Fixed-Point Dot Product | DSP, Neural Networks | Planned |
-| 10 | Horner's Method | Polynomial Evaluation | Planned |
-| 11 | CORDIC Engine | Trigonometry, Vector Rotation | Planned |
-| 12 | Jacobi Iterative Solver | Scientific Computing | Planned |
+| 10 | Fixed-Point Dot Product | DSP, Neural Networks | Planned |
+| 11 | Horner's Method | Polynomial Evaluation | Planned |
+| 12 | CORDIC Engine | Trigonometry, Vector Rotation | Planned |
+| 13 | Jacobi Iterative Solver | Scientific Computing | Planned |
 
 ## Phase 4 - Floating-Point Arithmetic
 
@@ -115,9 +115,9 @@ Building floating-point computation hardware.
 
 | # | Module | Used In | Status |
 |---|---------|---------|--------|
-| 13 | Floating-Point Normalization | IEEE Arithmetic | Planned |
-| 14 | BFloat16 Multiplier | Machine Learning | Planned |
-| 15 | BFloat16 MAC | AI Accelerators | Planned |
+| 14 | Floating-Point Normalization | IEEE Arithmetic | Planned |
+| 15 | BFloat16 Multiplier | Machine Learning | Planned |
+| 16 | BFloat16 MAC | AI Accelerators | Planned |
 
 ## Phase 5 - Integrated Math Accelerator
 
