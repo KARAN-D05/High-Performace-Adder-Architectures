@@ -66,23 +66,23 @@ The following table summarizes post-synthesis implementation results obtained us
 
 # 📊 Roadmap
 
-## Understanding why accelerators exist
+### Understanding why accelerators exist
 
 - [Multi-Cycle Harvard Processor (Reference Architecture)](https://github.com/KARAN-D05/Harvard-Processor)
 - Sequential instruction execution
 - Architectural bottlenecks
 - Why specialized datapaths outperform software loops
 
-## Current focus
+### Current focus
 
-- `Adder topologies`
+- Adder topologies
 - RTL implementation
 - Synthesis and STA
 - Area vs. speed trade-offs
 
 > Additional architectures: Implemented as encountered during study of arithmetic algorithms and architecture literature.
 
-## Mathematical Co-Processor
+### Mathematical Co-Processor
 
 The long-term objective is a configurable mathematical co-processor built from
 the arithmetic and computational architectures developed throughout the project.
