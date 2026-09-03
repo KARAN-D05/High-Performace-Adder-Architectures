@@ -66,26 +66,17 @@ The following table summarizes post-synthesis implementation results obtained us
 
 ## 📊 Roadmap
 
+> Architectures: Implemented as encountered during study of arithmetic algorithms and architecture literature.
+
 - [Multi-Cycle Harvard Processor (Reference Architecture)](https://github.com/KARAN-D05/Harvard-Processor)
 - Sequential instruction execution
 - Architectural bottlenecks
 - Why specialized datapaths outperform software loops
 
-> Architectures: Implemented as encountered during study of arithmetic algorithms and architecture literature.
-
 `Mathematical Co-Processor`
 
 The long-term objective is a configurable mathematical co-processor built from
 the arithmetic and computational architectures developed throughout the project.
-
-It may include:
-
-- Reusable arithmetic units
-- Fixed-point and floating-point datapaths
-- Mathematical kernels
-- BFloat16/FP arithmetic for ML-oriented workloads
-- Shared datapath and control
-- Standard hardware interface
 
 # 📜License
 - Source code and HDL files are licensed under the MIT License.
