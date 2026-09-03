@@ -66,72 +66,35 @@ The following table summarizes post-synthesis implementation results obtained us
 
 # 📊 Roadmap
 
-## Phase 0 - Motivation
-
-Understanding why accelerators exist.
+## Understanding why accelerators exist
 
 - [Multi-Cycle Harvard Processor (Reference Architecture)](https://github.com/KARAN-D05/Harvard-Processor)
 - Sequential instruction execution
 - Architectural bottlenecks
 - Why specialized datapaths outperform software loops
 
-## Phase 1 - Arithmetic Foundations
+## Current focus
 
-Fundamental arithmetic building blocks used throughout digital systems.
-
-| # | Module | Why It Matters | Status |
-|---|---------|----------------|--------|
-| 01 | Ripple Carry Adder | Baseline area and delay | ✅ |
-| 02 | Carry-Select Adder | Parallel carry computation | ✅ |
-| 03 | Carry Lookahead Adder | Faster carry computation | Planned |
-| 04 | Brent-Kung Prefix Adder | Scalable logarithmic carry propagation | Planned |
-| 05 | Leading Zero Counter (LZC) | Floating-point normalization | Planned |
-| 06 | Barrel Shifter | Alignment and fast shifting | Planned |
-
-## Phase 2 - Arithmetic Units
-
-Constructing reusable computational hardware.
-
-| # | Module | Used In | Status |
-|---|---------|---------|--------|
-| 07 | Booth Multiplier | Signed multiplication | Planned |
-| 08 | Wallace Tree Reduction | High-speed multipliers | Planned |
-| 09 | Fixed-Point Multiply-Accumulate (MAC) | DSP and AI | Planned |
-
-## Phase 3 - Computational Kernels
-
-Mapping mathematical algorithms directly into hardware.
-
-| # | Module | Used In | Status |
-|---|---------|---------|--------|
-| 10 | Fixed-Point Dot Product | DSP, Neural Networks | Planned |
-| 11 | Horner's Method | Polynomial Evaluation | Planned |
-| 12 | CORDIC Engine | Trigonometry, Vector Rotation | Planned |
-| 13 | Jacobi Iterative Solver | Scientific Computing | Planned |
-
-## Phase 4 - Floating-Point Arithmetic
-
-Building floating-point computation hardware.
-
-| # | Module | Used In | Status |
-|---|---------|---------|--------|
-| 14 | Floating-Point Normalization | IEEE Arithmetic | Planned |
-| 15 | BFloat16 Multiplier | Machine Learning | Planned |
-| 16 | BFloat16 MAC | AI Accelerators | Planned |
-
-## Phase 5 - Integrated Math Accelerator
-
-The final objective is to combine the reusable modules into a configurable mathematical co-processor containing:
-
-- Parameterized arithmetic units
-- Shared datapath
-- Register file
-- Operation decoder
-- Control logic
-- Standard hardware interface
-- Reusable accelerator IP
+- `Adder topologies`
+- RTL implementation
+- Synthesis and STA
+- Area vs. speed trade-offs
 
 > Additional architectures: Implemented as encountered during study of arithmetic algorithms and architecture literature.
+
+## Mathematical Co-Processor
+
+The long-term objective is a configurable mathematical co-processor built from
+the arithmetic and computational architectures developed throughout the project.
+
+It may include:
+
+- Reusable arithmetic units
+- Fixed-point and floating-point datapaths
+- Mathematical kernels
+- BFloat16/FP arithmetic for ML-oriented workloads
+- Shared datapath and control
+- Standard hardware interface
 
 # 📜License
 - Source code and HDL files are licensed under the MIT License.
