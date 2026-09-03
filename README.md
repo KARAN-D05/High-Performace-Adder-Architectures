@@ -69,9 +69,9 @@ The following table summarizes post-synthesis implementation results obtained us
 > Architectures: Implemented as encountered during the study of arithmetic algorithms and architecture literature.
 
 - [Multi-Cycle Harvard Processor (Reference Architecture)](https://github.com/KARAN-D05/Harvard-Processor)
- - Sequential instruction execution
- - Architectural bottlenecks
- - Why specialized datapaths can outperform software loops
+  - Sequential instruction execution
+  - Architectural bottlenecks
+  - Why specialized datapaths can outperform software loops
 
 ### 🧮 Mathematical Co-Processor
 
