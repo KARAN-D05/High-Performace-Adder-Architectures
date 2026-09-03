@@ -73,14 +73,7 @@ The following table summarizes post-synthesis implementation results obtained us
 - Architectural bottlenecks
 - Why specialized datapaths outperform software loops
 
-### Current focus
-
-- Adder topologies
-- RTL implementation
-- Synthesis and STA
-- Area vs. speed trade-offs
-
-> Additional architectures: Implemented as encountered during study of arithmetic algorithms and architecture literature.
+> Architectures: Implemented as encountered during study of arithmetic algorithms and architecture literature.
 
 ### Mathematical Co-Processor
 
