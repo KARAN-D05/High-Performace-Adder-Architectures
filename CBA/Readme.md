@@ -29,6 +29,12 @@ A parameterized 64-bit Carry-Bypass Adder using sixteen 4-bit blocks. Each block
 
 ## Block Width Study
 
+<p align="center">
+  <img src="images/width_vs_timing.png" width="900"/>
+  <br>
+  <sub>Maximum combinational delay vs. CBA block width</sub>
+</p>
+
 To determine a suitable block size for the 64-bit Carry-Bypass Adder, the design was synthesized and analyzed with different CBA block widths while preserving the hierarchical bypass structure.
 
 The tested configurations were 4, 8, 16, 32, and 64-bit blocks.
@@ -45,12 +51,6 @@ The tested configurations were 4, 8, 16, 32, and 64-bit blocks.
 | 16-bit | 4 | 4 | 2892.77 | 24.65 | ~40.6 MHz |
 | **32-bit** | **2** | **2** | **2875.26** | **24.09** | **~41.5 MHz** |
 | 64-bit | 1 | 1 | 2864.00 | 24.13 | ~41.4 MHz |
-
-<p align="center">
-  <img src="images/width_vs_timing.png" width="900"/>
-  <br>
-  <sub>Maximum combinational delay vs. CBA block width</sub>
-</p>
 
 ### Observations
 
