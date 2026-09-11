@@ -1,6 +1,6 @@
 # Carry-Bypass Adder (CBA)
 
-A parameterized 64-bit Carry-Bypass Adder using sixteen 4-bit blocks. Each block computes the carry using a Ripple-Carry Adder while a block-propagate signal enables the incoming carry to bypass the block when all four bit positions propagate carry, reducing carry propagation delay for favorable input patterns at the cost of additional hardware.
+A parameterized 64-bit Carry-Bypass Adder using two 32-bit blocks. Each block computes the carry using a Ripple-Carry Adder while a block-propagate signal enables the incoming carry to bypass the block when all 32 bit positions propagate carry.
 
 ## Synthesis Results
 
@@ -36,7 +36,6 @@ A parameterized 64-bit Carry-Bypass Adder using sixteen 4-bit blocks. Each block
 </p>
 
 To determine a suitable block size for the 64-bit Carry-Bypass Adder, the design was synthesized and analyzed with different CBA block widths while preserving the hierarchical bypass structure.
-
 The tested configurations were 4, 8, 16, 32, and 64-bit blocks.
 
 ### Experimental Results
