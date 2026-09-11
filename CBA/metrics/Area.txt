@@ -1,58 +1,4 @@
-12. Printing statistics.
-
 === cba ===
-
-   Number of wires:                  6
-   Number of wire bits:            211
-   Number of public wires:           6
-   Number of public wire bits:     211
-   Number of memories:               0
-   Number of memory bits:            0
-   Number of processes:              0
-   Number of cells:                 16
-     cbu                            16
-
-   Area for cell type \cbu is unknown!
-
-=== cbu ===
-
-   Number of wires:                 29
-   Number of wire bits:             42
-   Number of public wires:          11
-   Number of public wire bits:      24
-   Number of memories:               0
-   Number of memory bits:            0
-   Number of processes:              0
-   Number of cells:                 10
-     fa                              4
-     sky130_fd_sc_hd__mux2_1         1
-     sky130_fd_sc_hd__nor4_1         1
-     sky130_fd_sc_hd__xnor2_1        4
-
-   Area for cell type \fa is unknown!
-
-   Chip area for module '\cbu': 52.550400
-
-=== fa ===
-
-   Number of wires:                 12
-   Number of wire bits:             14
-   Number of public wires:           5
-   Number of public wire bits:       5
-   Number of memories:               0
-   Number of memory bits:            0
-   Number of processes:              0
-   Number of cells:                  2
-     sky130_fd_sc_hd__maj3_1         1
-     sky130_fd_sc_hd__xor3_1         1
-
-   Chip area for module '\fa': 33.782400
-
-=== design hierarchy ===
-
-   cba                               1
-     cbu                            16
-       fa                            4
 
    Number of wires:               1238
    Number of wire bits:           1779
@@ -69,4 +15,3 @@
      sky130_fd_sc_hd__xor3_1        64
 
    Chip area for top module '\cba': 3002.880000
-
