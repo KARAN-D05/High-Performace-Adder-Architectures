@@ -12,7 +12,7 @@ A parameterized 64-bit Carry-Bypass Adder using sixteen 4-bit blocks. Each block
 - Reduced carry propagation for favorable input patterns
 
 <p align="center">
-  <img src="images/cbu_synthesis.png" width="600"/>
+  <img src="images/cbu_synthesis.png" width="700"/>
   <br>
   <sub>Carry-Bypass Unit</sub>
 </p>
