@@ -4,7 +4,7 @@ Path Group: unconstrained
 Path Type: max
 
   Delay    Time   Description
----------------------------------------------------------
+--------------------------------------------------------
    0.00    0.00 v input external delay
    0.00    0.00 v b[0] (in)
    0.35    0.35 v cbu_block[0].addk/rca_block[0].addk/_70_/X (sky130_fd_sc_hd__maj3_1)
