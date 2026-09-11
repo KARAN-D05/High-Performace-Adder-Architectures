@@ -63,7 +63,7 @@ The following table summarizes post-synthesis implementation results obtained us
 |---|---|---|---|---|---|
 | [Ripple-Carry Adder](./RCA) | 64-bit | 1761.6896 µm² | 25.00 ns | ~40 MHz | 925 µW |
 | [Carry-Select Adder](./CSA) | 64-bit | 2317.2224 µm² | 14.24 ns | ~70.2 MHz | 1250 µW |
-| [Carry-Bypass Adder](./CBA) | 64-bit | 3002.8800 µm² | 27.99 ns | ~35.7 MHz | 1590 µW |
+| [Carry-Bypass Adder](./CBA) | 64-bit | 2875.2576 | 24.09 ns | ~41.5 MHz | 1400 µW |
 
 ## 📊 Roadmap
 
