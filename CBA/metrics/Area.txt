@@ -1,34 +1,46 @@
+
+=== $paramod\cbu\BLOCK_WIDTH=s32'00000000000000000000000000100000 ===
+
+   Number of wires:                182
+   Number of wire bits:            307
+   Number of public wires:          39
+   Number of public wire bits:     164
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 79
+     fa                             32
+     sky130_fd_sc_hd__a2111oi_0      2
+     sky130_fd_sc_hd__a211oi_1       1
+     sky130_fd_sc_hd__a21oi_1        3
+     sky130_fd_sc_hd__mux2_1         1
+     sky130_fd_sc_hd__nand4_1        2
+     sky130_fd_sc_hd__nor2_1         4
+     sky130_fd_sc_hd__nor3_1         4
+     sky130_fd_sc_hd__nor4_1         2
+     sky130_fd_sc_hd__o2111ai_1      2
+     sky130_fd_sc_hd__o2bb2ai_1      2
+     sky130_fd_sc_hd__xnor2_1       21
+     sky130_fd_sc_hd__xor2_1         3
+
+   Chip area for module '$paramod\cbu\BLOCK_WIDTH=s32'00000000000000000000000000100000': 356.592000
+
 === cba ===
 
    Number of wires:                  6
-   Number of wire bits:            211
+   Number of wire bits:            197
    Number of public wires:           6
-   Number of public wire bits:     211
+   Number of public wire bits:     197
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 16
-     cbu                            16
-
-=== cbu ===
-
-   Number of wires:                 29
-   Number of wire bits:             42
-   Number of public wires:          11
-   Number of public wire bits:      24
-   Number of memories:               0
-   Number of memory bits:            0
-   Number of processes:              0
-   Number of cells:                 10
-     fa                              4
-     sky130_fd_sc_hd__mux2_1         1
-     sky130_fd_sc_hd__nor4_1         1
-     sky130_fd_sc_hd__xnor2_1        4
+   Number of cells:                  2
+   $paramod\cbu\BLOCK_WIDTH=s32'00000000000000000000000000100000      2
 
 === fa ===
 
-   Number of wires:                 12
-   Number of wire bits:             14
+   Number of wires:                 75
+   Number of wire bits:           2290
    Number of public wires:           5
    Number of public wire bits:       5
    Number of memories:               0
@@ -38,24 +50,35 @@
      sky130_fd_sc_hd__maj3_1         1
      sky130_fd_sc_hd__xor3_1         1
 
+   Chip area for module '\fa': 33.782400
+
 === design hierarchy ===
 
    cba                               1
-     cbu                            16
-       fa                            4
+     $paramod\cbu\BLOCK_WIDTH=s32'00000000000000000000000000100000      2
+       fa                           32
 
-   Number of wires:               1238
-   Number of wire bits:           1779
-   Number of public wires:         502
-   Number of public wire bits:     915
+   Number of wires:               5170
+   Number of wire bits:         147371
+   Number of public wires:         404
+   Number of public wire bits:     845
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                224
+   Number of cells:                222
+     sky130_fd_sc_hd__a2111oi_0      4
+     sky130_fd_sc_hd__a211oi_1       2
+     sky130_fd_sc_hd__a21oi_1        6
      sky130_fd_sc_hd__maj3_1        64
-     sky130_fd_sc_hd__mux2_1        16
-     sky130_fd_sc_hd__nor4_1        16
-     sky130_fd_sc_hd__xnor2_1       64
+     sky130_fd_sc_hd__mux2_1         2
+     sky130_fd_sc_hd__nand4_1        4
+     sky130_fd_sc_hd__nor2_1         8
+     sky130_fd_sc_hd__nor3_1         8
+     sky130_fd_sc_hd__nor4_1         4
+     sky130_fd_sc_hd__o2111ai_1      4
+     sky130_fd_sc_hd__o2bb2ai_1      4
+     sky130_fd_sc_hd__xnor2_1       42
+     sky130_fd_sc_hd__xor2_1         6
      sky130_fd_sc_hd__xor3_1        64
 
-   Chip area for top module '\cba': 3002.880000
+   Chip area for top module '\cba': 2875.257600
