@@ -11,7 +11,6 @@ A parameterized 64-bit Carry-Bypass Adder using two 32-bit blocks. Each block co
 |---|---|
 | Width | 64-bit |
 | Block Size | 32-bit |
-| Number of Blocks | 2 |
 | Area | 2875.2576 µm² |
 
 ## Static Timing Analysis (OpenSTA)
@@ -25,12 +24,12 @@ A parameterized 64-bit Carry-Bypass Adder using two 32-bit blocks. Each block co
 
 | Metric | Value |
 |---|---|
-| Total Power | 1.59 mW |
+| Total Power | 1.4 mW |
 
 ## Block Width Study
 
 <p align="center">
-  <img src="images/width_vs_timing.png" width="900"/>
+  <img src="images/width_vs_timing.png" width="1000"/>
   <br>
   <sub>Maximum combinational delay vs. CBA block width</sub>
 </p>
