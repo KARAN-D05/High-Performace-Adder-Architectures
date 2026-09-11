@@ -1,8 +1,7 @@
 `default_nettype none
 
 module cba #(
-    parameter WIDTH = 64,
-    parameter BLOCK_WIDTH = 4
+    parameter WIDTH = 64
 ) (
     input logic [WIDTH-1:0] a, 
     input logic [WIDTH-1:0] b,
@@ -11,35 +10,27 @@ module cba #(
     output logic c_out
 );
 
-   wire [(WIDTH/BLOCK_WIDTH):0] carry;
+   wire [(WIDTH/4):0] carry;
    assign carry[0] = c_in;
-   assign c_out = carry[WIDTH/BLOCK_WIDTH];
+   assign c_out = carry[WIDTH/4];
 
    genvar i; 
 
    generate 
-    for (i = 0; i < (WIDTH/BLOCK_WIDTH); i++) begin: cbu_block
-        cbu #(
-            .BLOCK_WIDTH(BLOCK_WIDTH)
-            ) addk (
-            .a(a[BLOCK_WIDTH*i+(BLOCK_WIDTH-1):BLOCK_WIDTH*i]),
-            .b(b[BLOCK_WIDTH*i+(BLOCK_WIDTH-1):BLOCK_WIDTH*i]),
-            .c_in(carry[i]),
-            .sum(sum[BLOCK_WIDTH*i+(BLOCK_WIDTH-1):BLOCK_WIDTH*i]), 
-            .c_out(carry[i+1])
-            );
+    for (i = 0; i < (WIDTH/4); i++) begin: cbu_block
+        cbu addk (.a(a[4*i+3:4*i]), .b(b[4*i+3:4*i]), .c_in(carry[i]), .sum(sum[4*i+3:4*i]), .c_out(carry[i+1]));
     end
    endgenerate
 
 endmodule
 
 module cbu #(
-    parameter BLOCK_WIDTH = 4
+    parameter WIDTH = 4
 ) (
-    input logic [BLOCK_WIDTH-1:0] a, 
-    input logic [BLOCK_WIDTH-1:0] b,
+    input logic [WIDTH-1:0] a, 
+    input logic [WIDTH-1:0] b,
     input logic c_in,
-    output logic [BLOCK_WIDTH-1:0] sum,
+    output logic [WIDTH-1:0] sum,
     output logic c_out
 );
    
@@ -50,14 +41,14 @@ module cbu #(
    assign prop_3 = a[3] ^ b[3];
    assign prop_cbu = (prop_0 & prop_1 & prop_2 & prop_3);
 
-   wire [BLOCK_WIDTH:0] carry;
+   wire [WIDTH:0] carry;
    assign carry[0] = c_in;
-   assign c_out = prop_cbu ? c_in : carry[BLOCK_WIDTH];
+   assign c_out = prop_cbu ? c_in : carry[WIDTH];
 
    genvar i; 
 
    generate 
-    for (i = 0; i < BLOCK_WIDTH; i++) begin: rca_block
+    for (i = 0; i < WIDTH; i++) begin: rca_block
         fa addk (.a(a[i]), .b(b[i]), .c_in(carry[i]), .sum(sum[i]), .c_out(carry[i+1]));
     end
    endgenerate
