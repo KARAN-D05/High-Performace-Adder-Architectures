@@ -53,7 +53,7 @@ module testbench;
    c_in = 1'b1;
    #5;
 
-   $display("Simulation Complete");
+   $display("Simulation Complete!");
    $finish;
 
    end
