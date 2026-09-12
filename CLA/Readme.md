@@ -84,6 +84,7 @@ A larger lookahead network reduces the logical carry dependency, but introduces 
 Although the 32-bit configuration achieves the lowest measured critical path, the 16-bit configuration represents a more balanced practical choice when considering PPA (Power, Performance, and Area).
 - The 8 → 16-bit transition provides a very large timing improvement with a comparatively moderate area increase.
 - In contrast, moving from 16 → 32-bit blocks results in approximately 2× the area for only a 17.2% reduction in critical-path delay.
+
 Therefore, for a design where area and power are important alongside timing, 16-bit CLU blocks would be the preferred practical configuration. The 32-bit configuration is more appropriate when timing is the primary optimization objective.
 
 ### Selected Configuration
