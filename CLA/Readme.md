@@ -1,8 +1,5 @@
 # Carry Lookahead Adder (CLA)
-
 A parameterized 64-bit Carry Lookahead Adder using hierarchical lookahead blocks. Each block computes carry signals directly from propagate and generate terms, reducing the carry dependency compared to a Ripple-Carry Adder.
-
-The design was evaluated with different lookahead block widths to study the area-timing tradeoff and determine a suitable configuration for timing-oriented optimization.
 
 ## Synthesis Results
 
@@ -22,6 +19,11 @@ The design was evaluated with different lookahead block widths to study the area
 |---|---|
 | Maximum Combinational Delay | 3.22 ns |
 | Estimated Fmax | ~310.6 MHz |
+
+## Power Analysis
+| Metric | Value | 
+|---|---| 
+| Total Power | 2.59 mW |
 
 ## Block Width Study
 
