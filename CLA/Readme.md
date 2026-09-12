@@ -28,7 +28,7 @@ A parameterized 64-bit Carry Lookahead Adder using hierarchical lookahead blocks
 ## Block Width Study
 
 <p align="center">
-  <img src="images/width_vs_timing.png" width="1000"/>
+  <img src="images/width_vs_timing.png" width="900"/>
   <br>
   <sub>Maximum combinational delay vs. CLA block width</sub>
 </p>
