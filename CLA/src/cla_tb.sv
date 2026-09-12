@@ -4,7 +4,7 @@
 module testbench;
 
    parameter WIDTH = 64;
-   parameter BLOCK_WIDTH = 4;
+   parameter BLOCK_WIDTH = 32;
 
    logic [WIDTH-1:0] a;
    logic [WIDTH-1:0] b;
