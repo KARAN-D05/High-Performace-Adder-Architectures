@@ -81,14 +81,16 @@ A larger lookahead network reduces the logical carry dependency, but introduces 
 
 ### PPA Tradeoff
 
-Although the **32-bit configuration achieves the lowest measured critical path**, the **16-bit configuration represents a more balanced practical choice when considering PPA (Power, Performance, and Area)**.
-The 8 → 16-bit transition provides a very large timing improvement with a comparatively moderate area increase. In contrast, moving from 16 → 32-bit blocks results in approximately **2× the area for only a 17.2% reduction in critical-path delay**. Therefore, for a design where area and power are important alongside timing, **16-bit CLU blocks would be the preferred practical configuration**. The 32-bit configuration is more appropriate when timing is the primary optimization objective.
+Although the 32-bit configuration achieves the lowest measured critical path, the 16-bit configuration represents a more balanced practical choice when considering PPA (Power, Performance, and Area).
+- The 8 → 16-bit transition provides a very large timing improvement with a comparatively moderate area increase.
+- In contrast, moving from 16 → 32-bit blocks results in approximately 2× the area for only a 17.2% reduction in critical-path delay.
+Therefore, for a design where area and power are important alongside timing, 16-bit CLU blocks would be the preferred practical configuration. The 32-bit configuration is more appropriate when timing is the primary optimization objective.
 
 ### Selected Configuration
 
-For this study, **32-bit blocks were selected for the final 64-bit CLA implementation** because the primary objective of the design is **timing optimization and timing closure**.
+For this study, 32-bit blocks were selected for the final 64-bit CLA implementation because the primary objective of the design is **timing optimization and timing closure**.
 
-The 32-bit configuration achieved the **lowest measured maximum combinational delay of 3.22 ns**, corresponding to an estimated maximum frequency of approximately **310.6 MHz**.
+The 32-bit configuration achieved the lowest measured maximum combinational delay of 3.22 ns, corresponding to an estimated maximum frequency of approximately **310.6 MHz**.
 However, the experimental results indicate that **16-bit blocks are arguably the PPA-optimal configuration**. They achieve 3.89 ns timing at 3578.43 µm², avoiding the large area increase associated with the 32-bit lookahead network while retaining most of its timing benefit.
 
 This distinction highlights an important architectural tradeoff:
