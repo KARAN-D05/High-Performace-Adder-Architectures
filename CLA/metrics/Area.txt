@@ -1,5 +1,3 @@
-5. Printing statistics.
-
 === cla ===
 
    Number of wires:               6510
