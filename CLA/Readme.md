@@ -30,7 +30,7 @@ A parameterized 64-bit Carry Lookahead Adder using hierarchical lookahead blocks
 <p align="center">
   <img src="images/width_vs_timing.png" width="900"/>
   <br>
-  <sub>Maximum combinational delay vs. CLA block width</sub>
+  <sub>Maximum combinational delay vs. Area vs. CLA block width</sub>
 </p>
 
 To determine a suitable lookahead block size for the 64-bit Carry Lookahead Adder, the design was synthesized and analyzed with different CLA block widths while maintaining the same overall 64-bit adder architecture.
