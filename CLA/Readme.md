@@ -53,7 +53,6 @@ The tested configurations were 4, 8, 16, 32, and 64-bit lookahead blocks.
 ### Observations
 
 Increasing the CLA block width significantly reduced the maximum combinational delay up to 32-bit blocks. However, the area increased rapidly as larger lookahead networks were constructed.
-
 The timing improvements between configurations were:
 
 - **4 → 8 bits:** 11.90 → 9.77 ns (**−2.13 ns, −17.9%**)
@@ -61,7 +60,16 @@ The timing improvements between configurations were:
 - **16 → 32 bits:** 3.89 → 3.22 ns (**−0.67 ns, −17.2%**)
 - **32 → 64 bits:** 3.22 → 3.66 ns (**+0.44 ns, +13.7%**)
 
-While the 32-bit configuration achieved the lowest measured delay, increasing the block width to 64-bit caused the area to more than double:
+The **8 → 16-bit transition provides the largest practical timing improvement**, reducing the critical path by approximately 60% while increasing area from 2262.17 µm² to 3578.43 µm².
+In comparison, moving from **16 → 32-bit blocks** provides only a further 17.2% reduction in delay while approximately doubling the area:
+
+**16-bit → 32-bit:**
+
+- Area: 3578.43 → 7204.41 µm² (**~2.01×**)
+- Delay: 3.89 → 3.22 ns (**17.2% lower**)
+- Fmax: ~257.1 → ~310.6 MHz (**20.8% higher**)
+
+Increasing the block width to 64-bit further demonstrates the diminishing returns of a large flat lookahead network:
 
 **32-bit → 64-bit:**
 
@@ -69,15 +77,25 @@ While the 32-bit configuration achieved the lowest measured delay, increasing th
 - Delay: 3.22 → 3.66 ns (**13.7% worse**)
 - Fmax: ~310.6 → ~273.2 MHz (**12.0% lower**)
 
-This demonstrates the diminishing returns of increasing the lookahead range. A larger lookahead network reduces the logical carry dependency but introduces substantially more combinational hardware, routing, fanout, and complex gate structures. At 64-bit block width, these physical effects outweighed the theoretical reduction in carry dependency.
+A larger lookahead network reduces the logical carry dependency, but introduces substantially more combinational hardware, routing, fanout, and complex gate structures. At 64-bit block width, these physical effects outweigh the theoretical reduction in carry dependency.
+
+### PPA Tradeoff
+
+Although the **32-bit configuration achieves the lowest measured critical path**, the **16-bit configuration represents a more balanced practical choice when considering PPA (Power, Performance, and Area)**.
+The 8 → 16-bit transition provides a very large timing improvement with a comparatively moderate area increase. In contrast, moving from 16 → 32-bit blocks results in approximately **2× the area for only a 17.2% reduction in critical-path delay**.
+Therefore, for a design where area and power are important alongside timing, **16-bit CLU blocks would be the preferred practical configuration**. The 32-bit configuration is more appropriate when timing is the primary optimization objective.
 
 ### Selected Configuration
 
-Based on the synthesis and timing results, **32-bit blocks were selected for the final 64-bit CLA implementation**.
+For this study, **32-bit blocks were selected for the final 64-bit CLA implementation** because the primary objective of the design is **timing optimization and timing closure**.
 
 The 32-bit configuration achieved the **lowest measured maximum combinational delay of 3.22 ns**, corresponding to an estimated maximum frequency of approximately **310.6 MHz**.
+However, the experimental results indicate that **16-bit blocks are arguably the PPA-optimal configuration**. They achieve 3.89 ns timing at 3578.43 µm², avoiding the large area increase associated with the 32-bit lookahead network while retaining most of its timing benefit.
 
-Although the 32-bit configuration has significantly higher area than smaller CLA blocks, the design is being optimized primarily for **timing closure**. The 64-bit configuration demonstrated that further increasing the lookahead range does not necessarily improve physical timing and instead resulted in substantially higher area and worse measured delay.
+This distinction highlights an important architectural tradeoff:
+
+> **16-bit CLU → better PPA balance**  
+> **32-bit CLU → better timing**
 
 For comparison, the corresponding 64-bit RCA implementation had a maximum delay of approximately **25.00 ns**. The selected 32-bit CLA therefore provides approximately:
 
