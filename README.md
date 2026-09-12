@@ -64,6 +64,13 @@ The following table summarizes post-synthesis implementation results obtained us
 | [Ripple-Carry Adder](./RCA) | 64-bit | 1761.6896 µm² | 25.00 ns | ~40 MHz | 925 µW |
 | [Carry-Select Adder](./CSA) | 64-bit | 2317.2224 µm² | 14.24 ns | ~70.2 MHz | 1250 µW |
 | [Carry-Bypass Adder](./CBA) | 64-bit | 2875.2576 µm² | 24.09 ns | ~41.5 MHz | 1400 µW |
+| [Carry-Lookahead Adder](./CLA) | 64-bit | 7204.4096 µm² | 3.22 ns | ~310.6 MHz | 2590 µW |
+
+<p align="center">
+  <img src="CLA/images/width_vs_timing.png" width="800"/>
+  <br>
+  <sub>Maximum combinational delay vs. Area vs. CLA block width</sub>
+</p>
 
 ## 📊 Roadmap
 
