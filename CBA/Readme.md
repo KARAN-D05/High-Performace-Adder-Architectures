@@ -29,7 +29,7 @@ A parameterized 64-bit Carry-Bypass Adder using two 32-bit blocks. Each block co
 ## Block Width Study
 
 <p align="center">
-  <img src="images/width_vs_timing.png" width="1000"/>
+  <img src="images/width_vs_timing.png" width="900"/>
   <br>
   <sub>Maximum combinational delay vs. CBA block width</sub>
 </p>
