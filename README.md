@@ -67,7 +67,7 @@ The following table summarizes post-synthesis implementation results obtained us
 | [Carry-Lookahead Adder](./CLA) | 64-bit | 7204.4096 µm² | 3.22 ns | ~310.6 MHz | 2590 µW |
 
 <p align="center">
-  <img src="CLA/images/width_vs_timing.png" width="800"/>
+  <img src="CLA/images/width_vs_timing.png" width="900"/>
   <br>
   <sub>Maximum combinational delay vs. Area vs. CLA block width</sub>
 </p>
