@@ -63,8 +63,7 @@ module clu #(
 
             for (j = 0; j < BLOCK_WIDTH; j = j + 1) begin : term_gen
                 if (j < i) begin : valid_term
-                    assign carry_terms[i][j] =
-                        (&p[i:j+1]) & g[j];
+                    assign carry_terms[i][j] = (&p[i:j+1]) & g[j];
                 end
                 else begin : invalid_term
                     assign carry_terms[i][j] = 1'b0;
