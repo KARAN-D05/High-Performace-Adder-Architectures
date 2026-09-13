@@ -74,12 +74,12 @@ The following table summarizes post-synthesis implementation results obtained us
 
 ### Relative Performance
 
-| Architecture | Area vs. RCA | Fmax vs. RCA | ADP vs. RCA | PDP vs. RCA |
-| ------------ | ----------- | -----------| ---------- | ---------- |
-| Ripple-Carry Adder (RCA)    |        1.00× |        1.00× |       1.00× |       1.00× |
-| Cary-Select Adder (CSA)   |        1.32× |        1.76× |   **0.75×** |   **0.77×** |
-| Carry-Bypass Adder (CBA)   |        1.63× |        1.04× |       1.57× |       1.46× |
-| Carry-Lookahead Adder (CLA)   |        4.09× |      7.77×   |   **0.53×** |   **0.36×** |
+| Module                        | Area vs. RCA | Fmax vs. RCA | Power vs. RCA | ADP vs. RCA | PDP vs. RCA |
+| --------------------------- | --------------- | --------------- | ---------------- | -------------- | -------------- |
+| Ripple-Carry Adder (RCA)    |            1.00× |            1.00× |             1.00× |           1.00× |           1.00× |
+| Carry-Select Adder (CSA)    |            1.32× |            1.76× |             1.35× |       **0.75×** |       **0.77×** |
+| Carry-Bypass Adder (CBA)    |            1.63× |            1.04× |             1.51× |           1.57× |           1.46× |
+| Carry-Lookahead Adder (CLA) |            4.09× |        **7.77×** |             2.80× |       **0.53×** |       **0.36×** |
 
 <p align="center">
   <img src="CLA/images/width_vs_timing.png" width="900"/>
