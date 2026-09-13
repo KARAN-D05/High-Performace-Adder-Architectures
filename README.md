@@ -81,12 +81,6 @@ The following table summarizes post-synthesis implementation results obtained us
 | Carry-Bypass Adder    |        1.63× |        1.04× |         1.51× |       1.57× |       1.46× |
 | Carry-Lookahead Adder |        4.09× |    **7.77×** |         2.80× |   **0.53×** |   **0.36×** |
 
-<p align="center">
-  <img src="CLA/images/width_vs_timing.png" width="900"/>
-  <br>
-  <sub>Maximum combinational delay vs. Area vs. CLA block width</sub>
-</p>
-
 ### Architecture Characterization
 
 The 64-bit adder architectures were synthesized and analyzed across different
@@ -95,6 +89,12 @@ architectural parameters to study area, timing, and PPA tradeoffs.
 - [CLA Block Width Study](https://github.com/KARAN-D05/Math-Accelerators/tree/main/CLA#block-width-study)
 - [CSA Block Width Study](https://github.com/KARAN-D05/Math-Accelerators/tree/main/CSA#block-width-study)
 - [CBA Block Width Study](https://github.com/KARAN-D05/Math-Accelerators/tree/main/CBA#block-width-study)
+
+<p align="center">
+  <img src="CLA/images/width_vs_timing.png" width="900"/>
+  <br>
+  <sub>Maximum combinational delay vs. Area vs. CLA block width</sub>
+</p>
 
 ## 📊 Roadmap
 
