@@ -63,10 +63,13 @@ The following table summarizes post-synthesis implementation results obtained us
 
 | Module | Width | Area | Critical Path | Estimated Fmax | Total Power | ADP | PDP |
 |---|---|---|---|---|---|---|---|
-| [Ripple-Carry Adder](./RCA) | 64-bit | 1761.6896 µm² | 25.00 ns | ~40 MHz | 925 µW | 44,042.24 | 23,125 |
-| [Carry-Select Adder](./CSA) | 64-bit | 2317.2224 µm² | 14.24 ns | ~70.2 MHz | 1250 µW | 32,978.04 | 17,800 |
-| [Carry-Bypass Adder](./CBA) | 64-bit | 2875.2576 µm² | 24.09 ns | ~41.5 MHz | 1400 µW | 69,277.46 | 33,726 |
-| [Carry-Lookahead Adder](./CLA) | 64-bit | 7204.4096 µm² | 3.22 ns | ~310.6 MHz | 2590 µW | 23,197.19 | 8,339.8 |
+| [RCA](./RCA) | 64-bit | 1761.6896 µm² | 25.00 ns | ~40 MHz | 925 µW | 44,042.24 µm²·ns | 23,125 µW·ns |
+| [CSA](./CSA) | 64-bit | 2317.2224 µm² | 14.24 ns | ~70.2 MHz | 1250 µW | 32,978.04 µm²·ns | 17,800 µW·ns |
+| [CBA](./CBA) | 64-bit | 2875.2576 µm² | 24.09 ns | ~41.5 MHz | 1400 µW | 69,277.46 µm²·ns | 33,726 µW·ns |
+| [CLA](./CLA) | 64-bit | 7204.4096 µm² | 3.22 ns | ~310.6 MHz | 2590 µW | 23,197.19 µm²·ns | 8,339.8 µW·ns |
+
+> ADP (Area-Delay Product): Area × critical-path delay; lower values indicate better area-timing efficiency.
+> PDP (Power-Delay Product): Power × critical-path delay; lower values indicate better power-timing efficiency.
 
 <p align="center">
   <img src="CLA/images/width_vs_timing.png" width="900"/>
