@@ -40,7 +40,6 @@ The tested configurations were 4, 8, 16, 32, and 64-bit blocks.
 ### Experimental Results
 
 **Timing Analysis:** OpenSTA  
-**Adder Width:** 64-bit
 
 | Block Width | Number of Blocks | Bypass MUXes | Area (µm²) | Max Delay (ns) | Est. Fmax |
 |---|---|---|---|---|---|
