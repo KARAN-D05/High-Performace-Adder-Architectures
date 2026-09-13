@@ -72,6 +72,4 @@ The 32-bit configuration achieved the lowest measured maximum delay of **24.09 n
 
 For comparison, the corresponding 64-bit RCA implementation had a maximum delay of approximately **25.00 ns**. Thus, the selected CBA provides approximately:
 
-**3.6% reduction in maximum combinational delay**
-
-while demonstrating the architectural effect of carry bypass at the gate level.
+3.6% reduction in maximum combinational delay while demonstrating the architectural effect of carry bypass at the gate level.
