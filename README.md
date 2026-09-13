@@ -72,7 +72,7 @@ The following table summarizes post-synthesis implementation results obtained us
 
 > PDP (Power-Delay Product): Power × critical-path delay; lower values indicate better power-timing efficiency.
 
-### ⚡Relative Performance
+### Relative Performance
 
 | Architecture | Area vs. RCA | Fmax vs. RCA | ADP vs. RCA | PDP vs. RCA |
 | ------------ | ----------- | -----------| ---------- | ---------- |
