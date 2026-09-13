@@ -87,6 +87,15 @@ The following table summarizes post-synthesis implementation results obtained us
   <sub>Maximum combinational delay vs. Area vs. CLA block width</sub>
 </p>
 
+### Architecture Characterization
+
+The 64-bit adder architectures were synthesized and analyzed across different
+architectural parameters to study area, timing, and PPA tradeoffs.
+
+- [CLA Block Width Study](./CLA#block-width-study)
+- [CSA Block Width Study](./CSA#block-width-study)
+- [CBA Block Width Study](./CBA#block-width-study)
+
 ## 📊 Roadmap
 
 > Architectures: Implemented as encountered during the study of arithmetic algorithms and architecture literature.
