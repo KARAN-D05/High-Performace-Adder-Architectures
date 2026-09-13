@@ -61,24 +61,24 @@ The following table summarizes post-synthesis implementation results obtained us
 
 > Width: 64-Bit
 
-| Module | Area | Critical Path | Estimated Fmax | Power | ADP | PDP |
-|---|---|---|---|---|---|---|
-| [RCA](./RCA) | 1761.6896 µm² | 25.00 ns | ~40 MHz | 925 µW | 44042.24 µm²·ns | 23125 µW·ns |
-| [CSA](./CSA) | 2635.0272 µm² | 7.23 ns | ~138.3 MHz | 1580 µW | 32978.04 µm²·ns | 17800 µW·ns |
-| [CBA](./CBA) | 2875.2576 µm² | 24.09 ns | ~41.5 MHz | 1400 µW | 69277.46 µm²·ns | 33726 µW·ns |
-| [CLA](./CLA) | 7204.4096 µm² | 3.22 ns | ~310.6 MHz | 2590 µW | 23197.19 µm²·ns | 8339.8 µW·ns |
+| Module       | Area          | Critical Path | Estimated Fmax | Power   | ADP                 | PDP               |
+| ------------ | ------------- | ------------- | -------------- | ------- | ------------------- | ----------------- |
+| [RCA](./RCA) | 1761.6896 µm² | 25.00 ns      | ~40 MHz        | 925 µW  | 44042.24 µm²·ns     | 23125 µW·ns       |
+| [CSA](./CSA) | 2635.0272 µm² | 7.23 ns       | ~138.3 MHz     | 1580 µW | 19051.25 µm²·ns     | 11423.4 µW·ns     |
+| [CBA](./CBA) | 2875.2576 µm² | 24.09 ns      | ~41.5 MHz      | 1400 µW | 69277.46 µm²·ns     | 33726 µW·ns       |
+| [CLA](./CLA) | 7204.4096 µm² | 3.22 ns       | ~310.6 MHz     | 2590 µW | 23197.19 µm²·ns     | 8339.8 µW·ns      |
 
 > ADP (Area-Delay Product): Area × critical-path delay; lower values indicate better area-timing efficiency.
 > PDP (Power-Delay Product): Power × critical-path delay; lower values indicate better power-timing efficiency.
 
 ### Relative Performance
 
-| Module                        | Area vs. RCA | Fmax vs. RCA | Power vs. RCA | ADP vs. RCA | PDP vs. RCA |
-| --------------------------- | --------------- | --------------- | ---------------- | -------------- | -------------- |
-| Ripple-Carry Adder          |            1.00× |            1.00× |             1.00× |           1.00× |           1.00× |
-| Carry-Select Adder          |            1.32× |            1.76× |             1.35× |       **0.75×** |       **0.77×** |
-| Carry-Bypass Adder          |            1.63× |            1.04× |             1.51× |           1.57× |           1.46× |
-| Carry-Lookahead Adder       |            4.09× |        **7.77×** |             2.80× |       **0.53×** |       **0.36×** |
+| Module                | Area vs. RCA | Fmax vs. RCA | Power vs. RCA | ADP vs. RCA | PDP vs. RCA |
+| --------------------- | -----------: | -----------: | ------------: | ----------: | ----------: |
+| Ripple-Carry Adder    |        1.00× |        1.00× |         1.00× |       1.00× |       1.00× |
+| Carry-Select Adder    |    **1.50×** |    **3.46×** |     **1.71×** |   **0.43×** |   **0.49×** |
+| Carry-Bypass Adder    |        1.63× |        1.04× |         1.51× |       1.57× |       1.46× |
+| Carry-Lookahead Adder |        4.09× |    **7.77×** |         2.80× |   **0.53×** |   **0.36×** |
 
 <p align="center">
   <img src="CLA/images/width_vs_timing.png" width="900"/>
