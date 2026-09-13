@@ -69,6 +69,7 @@ The following table summarizes post-synthesis implementation results obtained us
 | [CLA](./CLA) | 7204.4096 µm² | 3.22 ns | ~310.6 MHz | 2590 µW | 23197.19 µm²·ns | 8339.8 µW·ns |
 
 > ADP (Area-Delay Product): Area × critical-path delay; lower values indicate better area-timing efficiency.
+
 > PDP (Power-Delay Product): Power × critical-path delay; lower values indicate better power-timing efficiency.
 
 <p align="center">
