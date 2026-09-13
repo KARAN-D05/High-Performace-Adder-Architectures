@@ -61,12 +61,12 @@ The following table summarizes post-synthesis implementation results obtained us
 
 > Width: 64-Bit
 
-| Module | Area (µm²) | Critical Path (ns) | Estimated Fmax(MHz) | Power (µW) | ADP (µm²·ns) | PDP (µW·ns)|
+| Module | Area | Critical Path | Estimated Fmax | Power | ADP | PDP |
 |---|---|---|---|---|---|---|
-| [RCA](./RCA) | 1761.6896 | 25.00 | ~40 | 925 | 44042.24 | 23125 |
-| [CSA](./CSA) | 2317.2224 | 14.24 | ~70.2 | 1250 | 32978.04 | 17800 |
-| [CBA](./CBA) | 2875.2576 | 24.09 | ~41.5 | 1400 | 69277.46 | 33726 |
-| [CLA](./CLA) | 7204.4096 | 3.22 | ~310.6 | 2590 | 23197.19 | 8339.8 |
+| [RCA](./RCA) | 1761.6896 µm² | 25.00 ns | ~40 MHz | 925 µW | 44042.24 µm²·ns | 23125 µW·ns |
+| [CSA](./CSA) | 2317.2224 µm² | 14.24 ns | ~70.2 MHz | 1250 µW | 32978.04 µm²·ns | 17800 µW·ns |
+| [CBA](./CBA) | 2875.2576 µm² | 24.09 ns | ~41.5 MHz | 1400 µW | 69277.46 µm²·ns | 33726 µW·ns |
+| [CLA](./CLA) | 7204.4096 µm² | 3.22 ns | ~310.6 MHz | 2590 µW | 23197.19 µm²·ns | 8339.8 µW·ns |
 
 > ADP (Area-Delay Product): Area × critical-path delay; lower values indicate better area-timing efficiency.
 > PDP (Power-Delay Product): Power × critical-path delay; lower values indicate better power-timing efficiency.
