@@ -81,18 +81,11 @@ The following table summarizes post-synthesis implementation results obtained us
 | Carry-Bypass Adder    |        1.63× |        1.04× |         1.51× |       1.57× |       1.46× |
 | Carry-Lookahead Adder |        4.09× |    **7.77×** |         2.80× |   **0.53×** |   **0.36×** |
 
-<table align="center">
-  <tr>
-    <td align="center" style="padding-right: 50px;">
-      <img src="CSA/images/width_vs_timing.png" width="800"><br>
-         <sub></b> Maximum combinational delay vs. Area vs. CLA block width
-    </td>
-    <td align="center" style="padding-left: 50px;">
-      <img src="CLA/images/width_vs_timing.png" width="800"><br>
-         <sub></b> Maximum combinational delay vs. Area vs. CSA block width
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="CLA/images/width_vs_timing.png" width="900"/>
+  <br>
+  <sub>Maximum combinational delay vs. Area vs. CLA block width</sub>
+</p>
 
 ## 📊 Roadmap
 
