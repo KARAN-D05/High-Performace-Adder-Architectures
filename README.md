@@ -92,9 +92,9 @@ The following table summarizes post-synthesis implementation results obtained us
 The 64-bit adder architectures were synthesized and analyzed across different
 architectural parameters to study area, timing, and PPA tradeoffs.
 
-- [CLA Block Width Study](./CLA#block-width-study)
-- [CSA Block Width Study](./CSA#block-width-study)
-- [CBA Block Width Study](./CBA#block-width-study)
+- [CLA Block Width Study](https://github.com/KARAN-D05/Math-Accelerators/tree/main/CLA#block-width-study)
+- [CSA Block Width Study](https://github.com/KARAN-D05/Math-Accelerators/tree/main/CSA#block-width-study)
+- [CBA Block Width Study](https://github.com/KARAN-D05/Math-Accelerators/tree/main/CBA#block-width-study)
 
 ## 📊 Roadmap
 
