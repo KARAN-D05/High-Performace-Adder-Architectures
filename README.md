@@ -72,14 +72,14 @@ The following table summarizes post-synthesis implementation results obtained us
 
 > PDP (Power-Delay Product): Power × critical-path delay; lower values indicate better power-timing efficiency.
 
-## ⚡Relative Performance
+### ⚡Relative Performance
 
 | Architecture | Area vs. RCA | Fmax vs. RCA | ADP vs. RCA | PDP vs. RCA |
 | ------------ | ----------- | -----------| ---------- | ---------- |
-| RCA    |        1.00× |        1.00× |       1.00× |       1.00× |
-| CSA    |        1.32× |        1.76× |   **0.75×** |   **0.77×** |
-| CBA    |        1.63× |        1.04× |       1.57× |       1.46× |
-| CLA    |        4.09× |      7.77×   |   **0.53×** |   **0.36×** |
+| Ripple-Carry Adder    |        1.00× |        1.00× |       1.00× |       1.00× |
+| Cary-Select Adder   |        1.32× |        1.76× |   **0.75×** |   **0.77×** |
+| Carry-Bypass Adder    |        1.63× |        1.04× |       1.57× |       1.46× |
+| Carry-Lookahead Adder    |        4.09× |      7.77×   |   **0.53×** |   **0.36×** |
 
 <p align="center">
   <img src="CLA/images/width_vs_timing.png" width="900"/>
