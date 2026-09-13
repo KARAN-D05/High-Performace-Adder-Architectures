@@ -69,6 +69,7 @@ The following table summarizes post-synthesis implementation results obtained us
 | [CLA](./CLA) | 7204.4096 µm² | 3.22 ns       | ~310.6 MHz     | 2590 µW | 23197.19 µm²·ns     | 8339.8 µW·ns      |
 
 > ADP (Area-Delay Product): Area × critical-path delay; lower values indicate better area-timing efficiency.
+> 
 > PDP (Power-Delay Product): Power × critical-path delay; lower values indicate better power-timing efficiency.
 
 ### Relative Performance
@@ -80,11 +81,20 @@ The following table summarizes post-synthesis implementation results obtained us
 | Carry-Bypass Adder    |        1.63× |        1.04× |         1.51× |       1.57× |       1.46× |
 | Carry-Lookahead Adder |        4.09× |    **7.77×** |         2.80× |   **0.53×** |   **0.36×** |
 
-<p align="center">
-  <img src="CLA/images/width_vs_timing.png" width="900"/>
+<table>
+<tr>
+<td align="center">
+  <img src="CLA/images/width_vs_timing.png" width="100%"/>
   <br>
-  <sub>Maximum combinational delay vs. Area vs. CLA block width</sub>
-</p>
+  <sub><b>Maximum combinational delay vs. Area vs. CLA block widthy</b></sub>
+</td>
+<td align="center">
+  <img src="CSA/images/width_vs_timing.png" width="100%"/>
+  <br>
+  <sub><b>Maximum combinational delay vs. Area vs. CSA block width</b></sub>
+</td>
+</tr>
+</table>
 
 ## 📊 Roadmap
 
