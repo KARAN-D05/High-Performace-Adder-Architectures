@@ -84,11 +84,11 @@ The following table summarizes post-synthesis implementation results obtained us
 <table align="center">
   <tr>
     <td align="center" style="padding-right: 50px;">
-      <img src="CSA/images/width_vs_timing.png" width="500"><br>
+      <img src="CSA/images/width_vs_timing.png" width="800"><br>
          <sub></b> Maximum combinational delay vs. Area vs. CLA block width
     </td>
     <td align="center" style="padding-left: 50px;">
-      <img src="CLA/images/width_vs_timing.png" width="500"><br>
+      <img src="CLA/images/width_vs_timing.png" width="800"><br>
          <sub></b> Maximum combinational delay vs. Area vs. CSA block width
     </td>
   </tr>
