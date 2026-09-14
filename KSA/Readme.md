@@ -10,7 +10,7 @@ A 64-bit Kogge-Stone Adder implementing a parallel-prefix carry computation usin
 - Sky130 HD synthesis and OpenSTA STA
 
 <p align="center">
-  <img src="images/ksa_synthesis.png" width="1000"/>
+  <img src="images/ksa_synthesis.png" width="1500"/>
   <br>
   <sub>KSA Synthesis</sub>
 </p>
