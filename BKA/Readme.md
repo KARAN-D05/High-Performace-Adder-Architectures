@@ -11,7 +11,7 @@ A 64-bit Brent-Kung Adder implementing a parallel-prefix carry computation using
 - Sky130 HD synthesis and OpenSTA STA
 
 <p align="center">
-  <img src="images/bka_synthesis.png" width="1500"/>
+  <img src="images/bka_synthesis.png" width="800"/>
   <br>
   <sub>BKA Synthesis</sub>
 </p>
