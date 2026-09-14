@@ -1511,4 +1511,5 @@ module bka #(
   
   assign sum = p ^ carry[WIDTH-1:0];
   assign c_out = carry[WIDTH];
+   
 endmodule
