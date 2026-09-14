@@ -67,7 +67,7 @@ The following table summarizes post-synthesis implementation results obtained us
 | [CSA](./CSA) | 2635.0272 µm² | 7.23 ns       | ~138.3 MHz     | 1580 µW | 19051.25 µm²·ns     | 11423.4 µW·ns     |
 | [CBA](./CBA) | 2875.2576 µm² | 24.09 ns      | ~41.5 MHz      | 1400 µW | 69264.96 µm²·ns     | 33726 µW·ns       |
 | [CLA](./CLA) | 7204.4096 µm² | 3.22 ns       | ~310.6 MHz     | 2590 µW | 23198.20 µm²·ns     | 8339.8 µW·ns      |
-| [KSA](./KSA) | 3080 µm²      | 3.88 ns       | ~257.7 MHz     | 1.62 mW | 11950.40 µm²·ns     | 6285.6 µW·ns      |
+| [KSA](./KSA) | 3080.4544 µm² | 3.88 ns       | ~257.7 MHz     | 1620 µW | 11952.16 µm²·ns     | 6285.6 µW·ns      |
 
 > ADP (Area-Delay Product): Area × critical-path delay; lower values indicate better area-timing efficiency.
 >
@@ -76,12 +76,20 @@ The following table summarizes post-synthesis implementation results obtained us
 ### Relative Performance
 
 | Module                | Area vs. RCA | Fmax vs. RCA | Power vs. RCA | ADP vs. RCA | PDP vs. RCA |
-| --------------------- | -----------: | -----------: | ------------: | ----------: | ----------: |
+| --------------------- |  ----------- |  ----------- |  ------------ |  ---------- |  ---------- |
 | Ripple-Carry Adder    |        1.00× |        1.00× |         1.00× |       1.00× |       1.00× |
 | Carry-Select Adder    |    **1.50×** |    **3.46×** |     **1.71×** |   **0.43×** |   **0.49×** |
 | Carry-Bypass Adder    |        1.63× |        1.04× |         1.51× |       1.57× |       1.46× |
 | Carry-Lookahead Adder |        4.09× |    **7.77×** |         2.80× |   **0.53×** |   **0.36×** |
 | Kogge-Stone Adder     |        1.75× |    **6.44×** |         1.75× |   **0.27×** |   **0.27×** |
+
+### Notable Configurations
+
+| Category | Configuration | Area | Critical Path | Estimated Fmax | Power | ADP | PDP |
+| -------- | ------------- | ---- | ------------  | --------------  | ----  | ---  | ---|
+| **High-Performance** | CLA (32-bit blocks) | 7204.4096 µm² | 3.22 ns | ~310.6 MHz | 2590 µW | 23198.20 µm²·ns | 8339.8 µW·ns |
+| **PPA Optimal** | KSA   | 3080.4544 µm² | 3.88 ns | ~257.7 MHz | 1620 µW | 11950.40 µm²·ns | 6285.6 µW·ns |
+| **2nd Best PPA** | CLA (16-bit blocks) | 3578.432 µm² | 3.89 ns | ~257.1 MHz | 1650 µW | 13920.10 µm²·ns | 6418.5 µW·ns |
 
 ### Architecture Characterization
 
