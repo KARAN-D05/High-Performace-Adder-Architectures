@@ -65,9 +65,9 @@ The following table summarizes post-synthesis implementation results obtained us
 | ------------ | ------------- | ------------- | -------------- | ------- | ------------------- | ----------------- |
 | [RCA](./RCA) | 1761.6896 µm² | 25.00 ns      | ~40 MHz        | 925 µW  | 44042.24 µm²·ns     | 23125 µW·ns       |
 | [CSA](./CSA) | 2635.0272 µm² | 7.23 ns       | ~138.3 MHz     | 1580 µW | 19051.25 µm²·ns     | 11423.4 µW·ns     |
-| [CBA](./CBA) | 2875.2576 µm² | 24.09 ns      | ~41.5 MHz      | 1400 µW | 69277.46 µm²·ns     | 33726 µW·ns       |
-| [CLA](./CLA) | 7204.4096 µm² | 3.22 ns       | ~310.6 MHz     | 2590 µW | 23197.19 µm²·ns     | 8339.8 µW·ns      |
-| [KSA](./KSA) | 3080.4544 µm² | 3.88 ns       | ~257.7 MHz     | 1620 µW | 11950.40 µm²·ns     | 6285.6 µW·ns      |
+| [CBA](./CBA) | 2875.2576 µm² | 24.09 ns      | ~41.5 MHz      | 1400 µW | 69264.96 µm²·ns     | 33726 µW·ns       |
+| [CLA](./CLA) | 7204.4096 µm² | 3.22 ns       | ~310.6 MHz     | 2590 µW | 23198.20 µm²·ns     | 8339.8 µW·ns      |
+| [KSA](./KSA) | 3080 µm²      | 3.88 ns       | ~257.7 MHz     | 1.62 mW | 11950.40 µm²·ns     | 6285.6 µW·ns      |
 
 > ADP (Area-Delay Product): Area × critical-path delay; lower values indicate better area-timing efficiency.
 >
@@ -81,7 +81,7 @@ The following table summarizes post-synthesis implementation results obtained us
 | Carry-Select Adder    |    **1.50×** |    **3.46×** |     **1.71×** |   **0.43×** |   **0.49×** |
 | Carry-Bypass Adder    |        1.63× |        1.04× |         1.51× |       1.57× |       1.46× |
 | Carry-Lookahead Adder |        4.09× |    **7.77×** |         2.80× |   **0.53×** |   **0.36×** |
-| Kogge-Stone Adder     |        1.75× |        6.44× |         1.75× |   **0.27×** |   **0.27×** |
+| Kogge-Stone Adder     |        1.75× |    **6.44×** |         1.75× |   **0.27×** |   **0.27×** |
 
 ### Architecture Characterization
 
