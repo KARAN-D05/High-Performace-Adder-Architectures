@@ -858,7 +858,7 @@ module ksa #(
     assign carry[62] = g6[61] | (p6[61] & c_in);
     assign carry[63] = g6[62] | (p6[62] & c_in);
     assign carry[64] = g6[63] | (p6[63] & c_in);
-
+    
     assign sum = p ^ carry[WIDTH-1:0];
     assign c_out = carry[WIDTH];
 
