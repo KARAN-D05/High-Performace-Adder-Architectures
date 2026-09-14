@@ -85,11 +85,11 @@ The following table summarizes post-synthesis implementation results obtained us
 
 ### Notable Configurations
 
-| Category | Configuration | Area | Critical Path | Estimated Fmax | Power | ADP | PDP |
-| -------- | ------------- | ---- | ------------  | --------------  | ----  | ---  | ---|
-| **High-Performance** | CLA (32-bit blocks) | 7204.4096 µm² | 3.22 ns | ~310.6 MHz | 2590 µW | 23198.20 µm²·ns | 8339.8 µW·ns |
-| **PPA Optimal** | KSA   | 3080.4544 µm² | 3.88 ns | ~257.7 MHz | 1620 µW | 11950.40 µm²·ns | 6285.6 µW·ns |
-| **2nd Best PPA** | CLA (16-bit blocks) | 3578.432 µm² | 3.89 ns | ~257.1 MHz | 1650 µW | 13920.10 µm²·ns | 6418.5 µW·ns |
+| Category | Configuration | Area | Critical Path | Estimated Fmax | ADP | PDP |
+| -------- | ------------- | ---- | ------------  | --------------  | ---  | ---|
+| **High-Performance** | CLA (32-bit blocks) | 7204.4096 µm² | 3.22 ns | ~310.6 MHz | 23198.20 µm²·ns | 8339.8 µW·ns |
+| **PPA Optimal** | KSA   | 3080.4544 µm² | 3.88 ns | ~257.7 MHz | 11950.40 µm²·ns | 6285.6 µW·ns |
+| **2nd Best PPA** | CLA (16-bit blocks) | 3578.432 µm² | 3.89 ns | ~257.1 MHz | 13920.10 µm²·ns | 6418.5 µW·ns |
 
 ### Architecture Characterization
 
