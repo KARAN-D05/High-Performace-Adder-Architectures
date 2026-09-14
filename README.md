@@ -1,8 +1,18 @@
-# 🚀 Math-Accelerators
+# 🚀 High-Performance Adder Architectures
 
-A general-purpose processor can execute almost any algorithm, but it does so by repeatedly fetching, decoding, and executing instructions. For computationally intensive workloads such as signal processing, scientific computing, computer graphics, and machine learning, this approach quickly becomes inefficient.
+A study and implementation of high-performance binary adder architectures, focusing on how different carry-computation strategies translate into hardware.
 
-Modern systems solve this problem using **hardware accelerators** - specialized datapaths designed to execute specific mathematical operations far more efficiently than software running on a CPU.
+The project implements and characterizes six 64-bit adder architectures:
+- Ripple-Carry Adder (RCA)
+- Carry-Select Adder (CSA)
+- Carry-Bypass Adder (CBA)
+- Carry-Lookahead Adder (CLA)
+- Kogge-Stone Adder (KSA)
+- Brent-Kung Adder (BKA)
+
+Each architecture is implemented in synthesizable SystemVerilog and evaluated through RTL simulation, gate-level simulation, synthesis, and static timing analysis.
+
+The primary characterization uses the `Sky130 HD` standard-cell library, with `Nangate45` used for cross-library comparison. Design-space exploration is also performed on selected architectures to study the trade-off between hardware area and timing.
 
 ## 🛠️ Tools & Technologies
 
@@ -12,49 +22,6 @@ Modern systems solve this problem using **hardware accelerators** - specialized 
 ![GTKWave](https://img.shields.io/badge/GTKWave-Waveforms-F57C00?style=flat-square)
 ![Yosys](https://img.shields.io/badge/Yosys-Synthesis-43A047?style=flat-square)
 ![OpenSTA](https://img.shields.io/badge/OpenSTA-Static_Timing_Analysis-8E24AA?style=flat-square)
-
-## 🧩 Accelerators
-
-A simple processor computing a single element of a dot product
-executes something conceptually like:
-
-```asm
-LOOP:
-    LDB 0x06          ; Load constant 1
-    LDA 0x08          ; Load multiplier (loop counter)
-
-    PASS A            ; Check if counter is zero
-    JZ DONE           ; Jump if counter is zero
-
-    SUB               ; Decrement counter
-    STA 0x08          ; Store updated counter
-
-    LDA 0x09          ; Load accumulated result
-    LDB 0x07          ; Load multiplicand
-    ADD               ; Add multiplicand to result
-    STA 0x09          ; Store updated result
-
-    LDA 0x08          ; Reload counter
-    PASS A            ; Update status flags
-    JNZ LOOP          ; Repeat until counter becomes zero
-
-DONE:
-    LDA 0x09          ; Load final product
-```
-
-repeating these instructions for every element.
-Although completely programmable, the processor performs every operation sequentially.
-An accelerator instead implements the computation directly in hardware.
-
-```
-Vector A
-      \
-        --> Dot Product Engine --> Result
-      /
-Vector B
-```
-
-Rather than executing instructions one at a time, the hardware itself performs the mathematical operation through dedicated datapaths, parallel arithmetic units, and optimized data movement.
 
 ## 🔬 Physical Characterization
 The following table summarizes post-synthesis implementation results obtained using the Sky130 HD standard-cell library.
@@ -99,20 +66,6 @@ architectural parameters to study area, timing, and PPA tradeoffs.
   <br>
   <sub>Maximum combinational delay vs. Area vs. CLA block width</sub>
 </p>
-
-## 📊 Roadmap
-
-> Architectures: Implemented as encountered during the study of arithmetic algorithms and architecture literature.
-
-- [Multi-Cycle Harvard Processor (Reference Architecture)](https://github.com/KARAN-D05/Harvard-Processor)
-- Sequential instruction execution
-- Architectural bottlenecks
-- Why specialized datapaths can outperform software loops
-
-### 🧮 Mathematical Co-Processor
-
-The long-term objective is a configurable mathematical co-processor built from
-the arithmetic and computational architectures developed throughout the project.
 
 # 📜License
 - Source code and HDL files are licensed under the MIT License.
