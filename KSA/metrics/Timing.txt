@@ -1,0 +1,33 @@
+Startpoint: b[0] (input port)
+Endpoint: c_out (output port)
+Path Group: unconstrained
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00 ^ input external delay
+   0.00    0.00 ^ b[0] (in)
+   0.17    0.17 ^ _1078_/X (sky130_fd_sc_hd__maj3_1)
+   0.22    0.39 ^ _1079_/X (sky130_fd_sc_hd__maj3_1)
+   0.15    0.54 ^ _1083_/X (sky130_fd_sc_hd__a21o_1)
+   0.11    0.64 v _1087_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.38    1.02 v _1091_/X (sky130_fd_sc_hd__or3b_1)
+   0.29    1.31 ^ _1097_/Y (sky130_fd_sc_hd__a311oi_1)
+   0.17    1.48 v _1101_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.22    1.71 v _1303_/X (sky130_fd_sc_hd__o21ba_1)
+   0.36    2.07 ^ _1305_/Y (sky130_fd_sc_hd__o41ai_1)
+   0.18    2.25 v _1307_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.38    2.63 ^ _1309_/Y (sky130_fd_sc_hd__o41ai_1)
+   0.19    2.82 v _1311_/Y (sky130_fd_sc_hd__a31oi_1)
+   0.28    3.10 ^ _1330_/Y (sky130_fd_sc_hd__o21ai_0)
+   0.18    3.28 v _1332_/Y (sky130_fd_sc_hd__a41oi_1)
+   0.26    3.54 ^ _1334_/Y (sky130_fd_sc_hd__o221ai_1)
+   0.18    3.72 ^ _1337_/X (sky130_fd_sc_hd__a21o_1)
+   0.09    3.80 v _1553_/Y (sky130_fd_sc_hd__nand4_1)
+   0.08    3.88 ^ _1556_/Y (sky130_fd_sc_hd__o211ai_1)
+   0.00    3.88 ^ c_out (out)
+           3.88   data arrival time
+---------------------------------------------------------
+(Path is unconstrained)
+
+
