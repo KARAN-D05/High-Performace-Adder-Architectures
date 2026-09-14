@@ -83,17 +83,17 @@ The following table summarizes post-synthesis implementation results obtained us
 | Carry-Lookahead Adder |        4.09× |    **7.77×** |         2.80× |   **0.53×** |   **0.36×** |
 | Kogge-Stone Adder     |        1.75× |    **6.44×** |         1.75× |   **0.27×** |   **0.27×** |
 
-### 🏆 Notable Configurations
-#### ⚡ Highest Performance
+### Notable Configurations
+#### Performance Optimal
 | Configuration | Area | Critical Path | Estimated Fmax | Power | ADP | PDP |
 | ------------- | --- | ------------ | -------------- | ---- | --- | --- |
 | CLA (32) | 7204.4096 µm² | 3.22 ns | ~310.6 MHz | 2.59 mW | 23198.20 µm²·ns | 8339.8 µW·ns |
 
-#### 📊 Best PPA
+#### PPA Optimal
 | Configuration | Area | Critical Path | Estimated Fmax | Power | ADP | PDP |
 | ------------- | ---  | ------------  | -------------- | ----  | --- | ---  |
-| 🥇 KSA            | 3080 µm² | 3.88 ns | ~257.7 MHz | 1.62 mW | 11950.40 µm²·ns | 6285.6 µW·ns |
-| 🥈 CLA (16) | 3578.432 µm² | 3.89 ns | ~257.1 MHz | 1.65 mW | 13920.10 µm²·ns | 6418.5 µW·ns |
+| KSA            | 3080 µm² | 3.88 ns | ~257.7 MHz | 1.62 mW | 11950.40 µm²·ns | 6285.6 µW·ns |
+| CLA (16) | 3578.432 µm² | 3.89 ns | ~257.1 MHz | 1.65 mW | 13920.10 µm²·ns | 6418.5 µW·ns |
 
 ### Architecture Characterization
 
