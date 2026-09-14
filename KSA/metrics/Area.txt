@@ -1,5 +1,3 @@
-10. Printing statistics.
-
 === ksa ===
 
    Number of wires:               1058
