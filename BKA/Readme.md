@@ -24,7 +24,7 @@ A 64-bit Brent-Kung Adder implementing a parallel-prefix carry computation using
 | Metric | Value |
 |---|---|
 | Width | 64-bit |
-| Area | TBD |
+| Area | 2058.224 µm² |
 
 ## Static Timing Analysis
 
