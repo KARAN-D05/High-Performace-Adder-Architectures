@@ -12,8 +12,6 @@ The project implements and characterizes six 64-bit adder architectures:
 
 The primary characterization uses the `Sky130 HD` standard-cell library, with Nangate45 used for cross-library comparison. Design-space exploration is also performed on selected architectures to study the trade-off between hardware area and timing. 
 
-Based on the PDP/ADP characterization, the Kogge-Stone Adder (KSA) was selected for full physical implementation, taking the design through placement, routing, and final GDS generation using the Sky130 HD standard-cell library.
-
 ## 🛠️ Tools & Technologies
 
 ![Icarus Verilog](https://img.shields.io/badge/Icarus_Verilog-Simulation-1E88E5?style=flat-square)
@@ -21,6 +19,28 @@ Based on the PDP/ADP characterization, the Kogge-Stone Adder (KSA) was selected 
 ![Yosys](https://img.shields.io/badge/Yosys-Synthesis-43A047?style=flat-square)
 ![OpenSTA](https://img.shields.io/badge/OpenSTA-Static_Timing_Analysis-8E24AA?style=flat-square)
 ![Sky130HD](https://img.shields.io/badge/Sky130HD-Primary_Characterization-455A64?style=flat-square)
+
+## Physical Implementation
+
+Based on the PDP/ADP characterization, the **Kogge-Stone Adder (KSA)** was selected for full physical implementation using the Sky130 HD standard-cell library.
+
+The design was taken through:
+`RTL → Synthesis → Floorplanning → Placement → PDN → Routing → DEF → GDS`
+- [ksa.def](KSA/gds/ksa.gds)
+- [ksa.gds](KSA/gds/ksa.gds)
+
+<table align="center">
+  <tr>
+    <td align="center" style="padding-right: 50px;">
+      <img src="KSA/gds/images/ksa_route.png" width="500"><br>
+         <sub></b> Post-Route Physical Layout (OpenROAD)
+    </td>
+    <td align="center" style="padding-left: 50px;">
+      <img src="KSA/gds/images/ksa_gds.png" width="500"><br>
+         <sub></b> Final GDSII Layout (KLayout)
+    </td>
+  </tr>
+</table>
 
 ## 📊 Adders Performance-Analysis
 | **Adder Topology**| RCA | CSA | CBA | CLA | KSA | BKA |
@@ -93,28 +113,6 @@ The following table summarizes post-synthesis implementation results obtained us
 | Carry-Lookahead Adder | 3.68×        | 2.47×        | 2.96×         | 1.49×       | 1.20×       |
 | Kogge-Stone Adder     | 1.67×        | 2.21×        | 1.88×         | 0.76×       | 0.85×       |
 | Brent-Kung Adder      | 1.06×        | 1.15×        | 1.16×         | 0.93×       | 1.01×       |
-
-## Physical Implementation
-
-Based on the PDP/ADP characterization, the **Kogge-Stone Adder (KSA)** was selected for full physical implementation using the Sky130 HD standard-cell library.
-
-The design was taken through:
-`RTL → Synthesis → Floorplanning → Placement → PDN → Routing → DEF → GDS`
-- [ksa.def](KSA/gds/ksa.gds)
-- [ksa.gds](KSA/gds/ksa.gds)
-
-<table align="center">
-  <tr>
-    <td align="center" style="padding-right: 50px;">
-      <img src="KSA/gds/images/ksa_route.png" width="450"><br>
-         <sub></b> Post-Route Physical Layout (OpenROAD)
-    </td>
-    <td align="center" style="padding-left: 50px;">
-      <img src="KSA/gds/images/ksa_gds.png" width="450"><br>
-         <sub></b> Final GDSII Layout (KLayout)
-    </td>
-  </tr>
-</table>
 
 # 📜License
 - Source code and HDL files are licensed under the MIT License.
