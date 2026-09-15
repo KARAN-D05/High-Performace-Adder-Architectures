@@ -103,17 +103,18 @@ The design was taken through:
 - [ksa.def](KSA/gds/ksa.gds)
 - [ksa.gds](KSA/gds/ksa.gds)
 
-<p align="center">
-  <img src="KSA/gds/images/ksa_route.png" width="400"/>
-  <br>
-  <sub>Post-Route Physical Layout (OpenROAD)</sub>
-</p>
-
-<p align="center">
-  <img src="KSA/gds/images/ksa_gds.png" width="400"/>
-  <br>
-  <sub>Final GDSII Layout (KLayout)</sub>
-</p>
+<table align="center">
+  <tr>
+    <td align="center" style="padding-right: 50px;">
+      <img src="KSA/gds/images/ksa_route.png" width="450"><br>
+         <sub></b> Post-Route Physical Layout (OpenROAD)
+    </td>
+    <td align="center" style="padding-left: 50px;">
+      <img src="KSA/gds/images/ksa_gds.png" width="450"><br>
+         <sub></b> Final GDSII Layout (KLayout)
+    </td>
+  </tr>
+</table>
 
 # 📜License
 - Source code and HDL files are licensed under the MIT License.
