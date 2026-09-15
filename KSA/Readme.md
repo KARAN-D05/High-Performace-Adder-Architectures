@@ -30,7 +30,6 @@ A 64-bit Kogge-Stone Adder implementing a parallel-prefix carry computation usin
 | Metric | Value |
 |---|---|
 | Critical Path | 3.88 ns |
-| Path | `b[0] → c_out` |
 | Estimated Fmax | ~258 MHz |
 
 ## Power
