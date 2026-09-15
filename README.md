@@ -26,7 +26,7 @@ Based on the PDP/ADP characterization, the **Kogge-Stone Adder (KSA)** was selec
 
 The design was taken through:
 `RTL → Synthesis → Floorplanning → Placement → PDN → Routing → DEF → GDS`
-- [ksa.def](KSA/gds/ksa.gds)
+- [ksa.def](KSA/gds/ksa.def)
 - [ksa.gds](KSA/gds/ksa.gds)
 
 <table align="center">
