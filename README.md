@@ -18,7 +18,7 @@ The primary characterization uses the `Sky130 HD` standard-cell library, with `N
 ![GTKWave](https://img.shields.io/badge/GTKWave-Waveforms-F57C00?style=flat-square)
 ![Yosys](https://img.shields.io/badge/Yosys-Synthesis-43A047?style=flat-square)
 ![OpenSTA](https://img.shields.io/badge/OpenSTA-Static_Timing_Analysis-8E24AA?style=flat-square)
-![Sky130HD](https://img.shields.io/badge/Sky130HD-Primary_Characterization-6A1B9A?style=flat-square)
+![Sky130HD](https://img.shields.io/badge/Sky130HD-Primary_Characterization-455A64?style=flat-square)
 
 ## 📊 Adders Performance-Analysis
 | **Adder Topology**| RCA | CSA | CBA | CLA | KSA | BKA |
