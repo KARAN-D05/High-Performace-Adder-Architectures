@@ -26,7 +26,7 @@ The primary characterization uses the `Sky130 HD` standard-cell library, with `N
 | **Estimated Fmax**| ~40 MHz | ~138.3 MHz | ~41.5 MHz | ~310.6 MHz | ~257.7 MHz | ~77.6 MHz |
 
 <p align="center">
-  <img src="Performance_Analysis.png" width="1500"/>
+  <img src="images/Performance_Analysis.png" width="1000"/>
   <br>
   <sub>  </sub>
 </p>
