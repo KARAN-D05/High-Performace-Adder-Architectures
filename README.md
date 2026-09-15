@@ -100,17 +100,17 @@ Based on the PDP/ADP characterization, the **Kogge-Stone Adder (KSA)** was selec
 
 The design was taken through:
 `RTL → Synthesis → Floorplanning → Placement → PDN → Routing → DEF → GDS`
-- ![ksa.def](KSA/gds/ksa.gds)
-- ![ksa.gds](KSA/gds/ksa.gds)
+- [ksa.def](KSA/gds/ksa.gds)
+- [ksa.gds](KSA/gds/ksa.gds)
 
 <p align="center">
-  <img src="CLA/KSA/gds/images/ksa_route.png" width="900"/>
+  <img src="KSA/gds/images/ksa_route.png" width="900"/>
   <br>
   <sub>Post-Route Physical Layout (OpenROAD)</sub>
 </p>
 
 <p align="center">
-  <img src="CLA/KSA/gds/images/ksa_gds" width="900"/>
+  <img src="KSA/gds/images/ksa_gds" width="900"/>
   <br>
   <sub>Final GDSII Layout (KLayout)</sub>
 </p>
