@@ -10,7 +10,7 @@ The project implements and characterizes six 64-bit adder architectures:
 - Kogge-Stone Adder (KSA)
 - Brent-Kung Adder (BKA)
 
-The primary characterization uses the `Sky130 HD` standard-cell library, with `Nangate45` used for cross-library comparison. Design-space exploration is also performed on selected architectures to study the trade-off between hardware area and timing. 
+The primary characterization uses the `Sky130 HD` standard-cell library, with Nangate45 used for cross-library comparison. Design-space exploration is also performed on selected architectures to study the trade-off between hardware area and timing. 
 
 ## 🛠️ Tools & Technologies
 
