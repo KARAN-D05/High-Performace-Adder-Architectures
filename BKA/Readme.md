@@ -8,7 +8,6 @@ A 64-bit Brent-Kung Adder implementing a parallel-prefix carry computation using
 - Reduced hardware compared to fully parallel prefix structures
 - Synthesizable SystemVerilog
 - RTL simulation and GLS verified
-- Sky130 HD synthesis and OpenSTA STA
 
 <p align="center">
   <img src="images/bka_synthesis.png" width="800"/>
