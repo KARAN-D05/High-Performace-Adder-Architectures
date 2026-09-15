@@ -21,9 +21,7 @@ The primary characterization uses the `Sky130 HD` standard-cell library, with Na
 ![Sky130HD](https://img.shields.io/badge/Sky130HD-Primary_Characterization-455A64?style=flat-square)
 
 ## 🏗️ Physical Implementation
-
-Based on the PDP/ADP characterization, the **Kogge-Stone Adder (KSA)** was selected for full physical implementation using the Sky130 HD standard-cell library.
-
+Kogge-Stone was selected for physical implementation after achieving the **lowest ADP and PDP** among the evaluated architectures in the Sky130HD characterization.
 The design was taken through:
 `RTL → Synthesis → Floorplanning → Placement → PDN → Routing → DEF → GDS`
 
