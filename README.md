@@ -12,6 +12,8 @@ The project implements and characterizes six 64-bit adder architectures:
 
 The primary characterization uses the `Sky130 HD` standard-cell library, with Nangate45 used for cross-library comparison. Design-space exploration is also performed on selected architectures to study the trade-off between hardware area and timing. 
 
+Based on the PDP/ADP characterization, the Kogge-Stone Adder (KSA) was selected for full physical implementation, taking the design through placement, routing, and final GDS generation using the Sky130 HD standard-cell library.
+
 ## 🛠️ Tools & Technologies
 
 ![Icarus Verilog](https://img.shields.io/badge/Icarus_Verilog-Simulation-1E88E5?style=flat-square)
@@ -69,12 +71,6 @@ architectural parameters to study area, timing, and PPA tradeoffs.
 - [CSA Block Width Study](https://github.com/KARAN-D05/High-Performance-Adder-Architectures/tree/main/CSA#block-width-study)
 - [CBA Block Width Study](https://github.com/KARAN-D05/High-Performance-Adder-Architectures/tree/main/CBA#block-width-study)
 
-<p align="center">
-  <img src="CLA/images/width_vs_timing.png" width="900"/>
-  <br>
-  <sub>Maximum combinational delay vs. Area vs. CLA block width</sub>
-</p>
-
 The following table summarizes post-synthesis implementation results obtained using the Nangate45 standard-cell library.
 > Nangate45
 
@@ -97,6 +93,27 @@ The following table summarizes post-synthesis implementation results obtained us
 | Carry-Lookahead Adder | 3.68×        | 2.47×        | 2.96×         | 1.49×       | 1.20×       |
 | Kogge-Stone Adder     | 1.67×        | 2.21×        | 1.88×         | 0.76×       | 0.85×       |
 | Brent-Kung Adder      | 1.06×        | 1.15×        | 1.16×         | 0.93×       | 1.01×       |
+
+## Physical Implementation
+
+Based on the PDP/ADP characterization, the **Kogge-Stone Adder (KSA)** was selected for full physical implementation using the Sky130 HD standard-cell library.
+
+The design was taken through:
+`RTL → Synthesis → Floorplanning → Placement → PDN → Routing → DEF → GDS`
+![ksa.def](KSA/gds/ksa.gds)
+![ksa.gds](KSA/gds/ksa.gds)
+
+<p align="center">
+  <img src="CLA/KSA/gds/images/ksa_route.png" width="900"/>
+  <br>
+  <sub>Post-Route Physical Layout (OpenROAD)</sub>
+</p>
+
+<p align="center">
+  <img src="CLA/KSA/gds/images/ksa_gds" width="900"/>
+  <br>
+  <sub>Final GDSII Layout (KLayout)</sub>
+</p>
 
 # 📜License
 - Source code and HDL files are licensed under the MIT License.
