@@ -24,7 +24,7 @@ The primary characterization uses the `Sky130 HD` standard-cell library, with `N
 ## 🔬 Physical Characterization
 The following table summarizes post-synthesis implementation results obtained using the Sky130 HD standard-cell library.
 
-> Width: 64-Bit
+> Sky130HD
 
 | Module       | Area          | Critical Path | Estimated Fmax | Power    | ADP                 | PDP               |
 | ------------ | ------------- | ------------- | -------------- | -------- | ------------------- | ----------------- |
@@ -64,6 +64,29 @@ architectural parameters to study area, timing, and PPA tradeoffs.
   <br>
   <sub>Maximum combinational delay vs. Area vs. CLA block width</sub>
 </p>
+
+The following table summarizes post-synthesis implementation results obtained using the Nangate45 standard-cell library.
+> Nangate45
+
+| Module       | Area         | Critical Path | Estimated Fmax | Power  | ADP            | PDP          |
+| ------------ | ------------ | ------------- | -------------- | ------ | -------------- | ------------ |
+| [RCA](./RCA) | 391.552 µm²  | 2.10 ns       | ~476.2 MHz     | 246 µW | 822.26 µm²·ns  | 516.6 µW·ns  |
+| [CSA](./CSA) | 519.764 µm²  | 1.11 ns       | ~900.9 MHz     | 446 µW | 577.94 µm²·ns  | 495.06 µW·ns |
+| [CBA](./CBA) | 551.152 µm²  | 2.90 ns       | ~344.8 MHz     | 330 µW | 1598.34 µm²·ns | 957 µW·ns    |
+| [CLA](./CLA) | 1441.188 µm² | 0.85 ns       | ~1176.5 MHz    | 729 µW | 1225.01 µm²·ns | 618.65 µW·ns |
+| [KSA](./KSA) | 653.296 µm²  | 0.95 ns       | ~1052.6 MHz    | 462 µW | 620.63 µm²·ns  | 438.90 µW·ns |
+| [BKA](./BKA) | 416.556 µm²  | 1.83 ns       | ~546.4 MHz     | 285 µW | 762.30 µm²·ns  | 521.55 µW·ns |
+
+### Relative Performance
+
+| Module                | Area vs. RCA | Fmax vs. RCA | Power vs. RCA | ADP vs. RCA | PDP vs. RCA |
+| --------------------- | ------------ | ------------ | ------------- | ----------- | ----------- |
+| Ripple-Carry Adder    | 1.00×        | 1.00×        | 1.00×         | 1.00×       | 1.00×       |
+| Carry-Select Adder    | 1.33×        | 1.89×        | 1.81×         | 0.70×       | 0.96×       |
+| Carry-Bypass Adder    | 1.41×        | 0.72×        | 1.34×         | 1.94×       | 1.85×       |
+| Carry-Lookahead Adder | 3.68×        | 2.47×        | 2.96×         | 1.49×       | 1.20×       |
+| Kogge-Stone Adder     | 1.67×        | 2.21×        | 1.88×         | 0.76×       | 0.85×       |
+| Brent-Kung Adder      | 1.06×        | 1.15×        | 1.16×         | 0.93×       | 1.01×       |
 
 # 📜License
 - Source code and HDL files are licensed under the MIT License.
