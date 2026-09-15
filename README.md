@@ -16,10 +16,17 @@ The primary characterization uses the `Sky130 HD` standard-cell library, with `N
 
 ![Icarus Verilog](https://img.shields.io/badge/Icarus_Verilog-Simulation-1E88E5?style=flat-square)
 ![Verilator](https://img.shields.io/badge/Verilator-Linting-00897B?style=flat-square)
-![Cocotb](https://img.shields.io/badge/Cocotb-Verification-D81B60?style=flat-square)
 ![GTKWave](https://img.shields.io/badge/GTKWave-Waveforms-F57C00?style=flat-square)
 ![Yosys](https://img.shields.io/badge/Yosys-Synthesis-43A047?style=flat-square)
 ![OpenSTA](https://img.shields.io/badge/OpenSTA-Static_Timing_Analysis-8E24AA?style=flat-square)
+![Sky130HD](https://img.shields.io/badge/Sky130HD-Primary_Characterization-6A1B9A?style=flat-square)
+![Nangate45](https://img.shields.io/badge/Nangate45-Cross--Library_Validation-455A64?style=flat-square)
+
+<p align="center">
+  <img src="images/Performance_Analysis.png" width="1000"/>
+  <br>
+  <sub>Adders Performance-Analysis</sub>
+</p>
 
 ## 🔬 Physical Characterization
 The following table summarizes post-synthesis implementation results obtained using the Sky130 HD standard-cell library.
