@@ -104,13 +104,13 @@ The design was taken through:
 - [ksa.gds](KSA/gds/ksa.gds)
 
 <p align="center">
-  <img src="KSA/gds/images/ksa_route.png" width="900"/>
+  <img src="KSA/gds/images/ksa_route.png" width="400"/>
   <br>
   <sub>Post-Route Physical Layout (OpenROAD)</sub>
 </p>
 
 <p align="center">
-  <img src="KSA/gds/images/ksa_gds" width="900"/>
+  <img src="KSA/gds/images/ksa_gds.png" width="400"/>
   <br>
   <sub>Final GDSII Layout (KLayout)</sub>
 </p>
