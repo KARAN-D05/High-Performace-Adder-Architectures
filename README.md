@@ -70,12 +70,12 @@ The following table summarizes post-synthesis implementation results obtained us
 
 | Module       | Area         | Critical Path | Estimated Fmax | Power  | ADP            | PDP          |
 | ------------ | ------------ | ------------- | -------------- | ------ | -------------- | ------------ |
-| [RCA](./RCA) | 391.552 µm²  | 2.10 ns       | ~476.2 MHz     | 246 µW | 822.26 µm²·ns  | 516.6 µW·ns  |
-| [CSA](./CSA) | 519.764 µm²  | 1.11 ns       | ~900.9 MHz     | 446 µW | 577.94 µm²·ns  | 495.06 µW·ns |
-| [CBA](./CBA) | 551.152 µm²  | 2.90 ns       | ~344.8 MHz     | 330 µW | 1598.34 µm²·ns | 957 µW·ns    |
-| [CLA](./CLA) | 1441.188 µm² | 0.85 ns       | ~1176.5 MHz    | 729 µW | 1225.01 µm²·ns | 618.65 µW·ns |
-| [KSA](./KSA) | 653.296 µm²  | 0.95 ns       | ~1052.6 MHz    | 462 µW | 620.63 µm²·ns  | 438.90 µW·ns |
-| [BKA](./BKA) | 416.556 µm²  | 1.83 ns       | ~546.4 MHz     | 285 µW | 762.30 µm²·ns  | 521.55 µW·ns |
+| RCA          | 391.552 µm²  | 2.10 ns       | ~476.2 MHz     | 246 µW | 822.26 µm²·ns  | 516.6 µW·ns  |
+| CSA          | 519.764 µm²  | 1.11 ns       | ~900.9 MHz     | 446 µW | 577.94 µm²·ns  | 495.06 µW·ns |
+| CBA          | 551.152 µm²  | 2.90 ns       | ~344.8 MHz     | 330 µW | 1598.34 µm²·ns | 957 µW·ns    |
+| CLA          | 1441.188 µm² | 0.85 ns       | ~1176.5 MHz    | 729 µW | 1225.01 µm²·ns | 618.65 µW·ns |
+| KSA          | 653.296 µm²  | 0.95 ns       | ~1052.6 MHz    | 462 µW | 620.63 µm²·ns  | 438.90 µW·ns |
+| BKA          | 416.556 µm²  | 1.83 ns       | ~546.4 MHz     | 285 µW | 762.30 µm²·ns  | 521.55 µW·ns |
 
 ### Relative Performance
 
