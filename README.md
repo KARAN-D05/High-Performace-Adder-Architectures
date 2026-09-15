@@ -22,8 +22,6 @@ The primary characterization uses the `Sky130 HD` standard-cell library, with Na
 
 ## 🏗️ Physical Implementation
 Kogge-Stone was selected for physical implementation after achieving the **lowest ADP and PDP** among the evaluated architectures in the Sky130HD characterization.
-The design was taken through:
-`RTL → Synthesis → Floorplanning → Placement → PDN → Routing → DEF → GDS`
 
 <table align="center">
   <tr>
